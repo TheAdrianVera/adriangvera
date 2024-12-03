@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Particles from "./components/particles"
 import React from "react"
 import Link from "next/link"
