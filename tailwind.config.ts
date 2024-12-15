@@ -11,6 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        myColors: {
+          yellow: '#e0ca3c ',
+          orange: '#f17300 ',
+          sagegreen: '#457353',
+          periwinkle: '#b7c0ee',
+        } 
       },
     },
   },
