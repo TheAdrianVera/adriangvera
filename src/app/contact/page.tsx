@@ -1,23 +1,63 @@
+import { VscGithub } from "react-icons/vsc";
+import { HiOutlineMail } from "react-icons/hi";
+import { LiaLinkedin } from "react-icons/lia";
+import Link from "next/link"
+import { Card } from '../components/card'
+
+const socials = [
+    {
+        icon: <LiaLinkedin />,
+        href: 'https://www.linkedin.com/in/adrian-vera-6180a7b6/',
+        label: 'LinkedIn',
+        handle: 'Adrian Vera'
+    },
+    {
+        icon: <HiOutlineMail />,
+        href: 'mailto:agvm94@gmail.com',
+        label: 'Email',
+        handle: 'agvm94@gmail.com'
+    },
+    {
+        icon: <VscGithub />,
+        href: 'https://github.com/TheAdrianVera',
+        label: 'Github',
+        handle: '@TheAdrianVera'
+    }
+]
 
 export default function Contact() {
 
     return (
         <div className='bg-mycolors-orange relative w-screen h-screen flex justify-center items-center'>
-            <div>
-                <h1 className='flex justify-center text-[2rem]'>Let's Get In Touch</h1>
-                <div className='flex flex-col md:flex-row md:justify-center w-screen md:justify-around pt-10'>
-                    <div className='border-2 border-color-black mb-10 mx-10 h-40 md:mx-0 md:h-80 md:w-80'>
-                        <p>Email</p>
-                    </div>
-                    <div className='border-2 border-color-black mb-10 mx-10 h-40 md:mx-0 md:h-80 md:w-80'>
-                        <p>Github</p>
-                    </div>
-                    <div className='border-2 border-color-black mx-10 h-40 md:mx-0 md:h-80 md:w-80'>
-                        <p>LinkedIn</p>
-                    </div>
-                </div>
-
-            </div>
+			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+					{socials.map((s) => (
+						<Card>
+							<Link
+								href={s.href}
+								target="_blank"
+								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+							>
+								<span
+									className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
+									aria-hidden="true"
+								/>
+								<span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-mycolors-orange group-hover:border-zinc-200 drop-shadow-orange">
+									{s.icon}
+								</span>{" "}
+								<div className="z-10 flex flex-col items-center">
+									<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-white group-hover:text-white-400 font-display">
+										{s.handle}
+									</span>
+									<span className="mt-4 text-sm text-center duration-1000 text-white-400 group-hover:text-zinc-200">
+										{s.label}
+									</span>
+								</div>
+							</Link>
+						</Card>
+					))}
+				</div>
+			</div>
 
         </div>
     )
