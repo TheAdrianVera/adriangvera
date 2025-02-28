@@ -16,7 +16,9 @@ export default function Contact() {
                 </div>
                 <div className='flex justify-center mt-8'>
                     <Link href='/'>
-                        <IoArrowBack className='text-3xl text-mycolors-black cursor-pointer' />
+                        <div className='relative group'>
+                            <IoArrowBack className='text-3xl text-mycolors-black cursor-pointer transition duration-500 ease-in-out group-hover:text-white' />
+                        </div>
                     </Link>
                 </div>
             </div>
