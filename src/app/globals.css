@@ -104,7 +104,6 @@
   src: url('./fonts/Kanit-ThinItalic.ttf') format('truetype');
 }
 
-
 body {
   color: var(--foreground);
   background: var(--background);
