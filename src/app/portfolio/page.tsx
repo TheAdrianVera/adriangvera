@@ -1,5 +1,5 @@
 import { IoArrowBack } from "react-icons/io5"
-import Carousel from "../components/carousel"
+import Carousel from "../components/Carousel"
 import Link from "next/link"
 
 export default function Projects() {

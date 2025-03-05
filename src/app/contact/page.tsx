@@ -1,5 +1,5 @@
 import Link from "next/link"
-import ContactCard from "../components/contact-card"
+import ContactCard from "../components/ContactCard"
 import { IoArrowBack } from "react-icons/io5"
 
 
