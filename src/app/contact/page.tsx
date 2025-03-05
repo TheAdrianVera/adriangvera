@@ -9,7 +9,7 @@ export default function Contact() {
     return (
     
     <div className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'>
-        <PageHeader />
+        <PageHeader color='black'/>
         <div className='w-screen h-screen flex justify-center items-center'>
             <div className=''>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
