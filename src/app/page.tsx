@@ -1,5 +1,5 @@
-import Particles from "./components/particles"
 import React from "react"
+import Particles from "./components/particles"
 import Link from "next/link"
 
 const navigation = [
