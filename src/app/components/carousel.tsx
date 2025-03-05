@@ -1,3 +1,4 @@
+import Marquee from "react-fast-marquee"
 interface Logo {
     name: string,
     url: string
@@ -11,16 +12,19 @@ const Carousel:React.FC<CarouselProps> = ({logoUrls}) => {
 
     return (
         <div className='w-full overflow-hidden'>
-            <div id='carousel' className='flex w-full'>
+            <Marquee 
+                speed={100}
+                className='w-full'
+            >
                 {logoUrls.map((logo, index)=>(
                     <img
                         key={index} 
                         src={logo.url}
                         alt={logo.name}
-                        className='w-1/6 h-auto'    
+                        className='w-auto h-20 px-6'    
                     />
                 ))}
-            </div>
+            </Marquee>
         </div>
     )
 }
