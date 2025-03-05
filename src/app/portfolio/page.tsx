@@ -35,12 +35,11 @@ export default function Projects() {
     ]
 
     return (
-        <div className='bg-mycolors-white relative w-screen h-screen flex justify-center items-center'>
-            <div className='w-[80%]'>
-                <h1 className='flex justify-center text-[2rem] text-mycolors-black'>Portfolio</h1>
-
+    <div className='bg-mycolors-white w-screen h-[100%] flex-col'>
+        <div>NAV</div>
+        <div className='w-screen h-screen flex justify-center items-center'>
+            <div className=''>
                 <Carousel logoUrls={logoUrls}/>
-
                 <div className='flex justify-center mt-8'>
                     <Link href='/'>
                         <div className='relative group'>
@@ -50,5 +49,6 @@ export default function Projects() {
                 </div>
             </div>
         </div>
+    </div>
     )
 }
