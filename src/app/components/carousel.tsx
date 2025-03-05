@@ -25,5 +25,4 @@ const Carousel:React.FC<CarouselProps> = ({logoUrls}) => {
     )
 }
 
-
 export default Carousel
