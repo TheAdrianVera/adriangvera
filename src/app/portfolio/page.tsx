@@ -37,7 +37,7 @@ export default function Projects() {
     return (
         <div className='bg-mycolors-white relative w-screen h-screen flex justify-center items-center'>
             <div className='w-[80%]'>
-                <h1 className='flex justify-center text-[2rem] text-mycolors-black'>Projects</h1>
+                <h1 className='flex justify-center text-[2rem] text-mycolors-black'>Portfolio</h1>
 
                 <Carousel logoUrls={logoUrls}/>
 

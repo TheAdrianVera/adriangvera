@@ -3,7 +3,7 @@ import React from "react"
 import Link from "next/link"
 
 const navigation = [
-  { name: "Projects", href: "/projects" },
+  { name: "Portfolio", href: "/portfolio" },
   { name: "Contact", href: "/contact" },
 ]
 
