@@ -8,6 +8,7 @@ export default function Projects() {
         <div className='bg-mycolors-white relative w-screen h-screen flex justify-center items-center'>
             <div className='w-[80%]'>
                 <h1 className='flex justify-center text-[2rem] text-mycolors-black'>Projects</h1>
+                
                 <div className='w-full overflow-hidden'>
                     <div id='carousel' className='flex w-full'>
                         <img src='../../../logos/client_logos/aditudelogo.png' alt='Company 1' className='w-1/6 h-auto' />
@@ -19,6 +20,7 @@ export default function Projects() {
                         <img src='../../../logos/client_logos/linestarlogolong.png' alt='Company 2' className='w-1/6 h-auto' />
                     </div>
                 </div>
+
                 <div className='flex justify-center mt-8'>
                     <Link href='/'>
                         <div className='relative group'>
