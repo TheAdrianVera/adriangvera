@@ -1,25 +1,45 @@
 import { IoArrowBack } from "react-icons/io5"
+import Carousel from "../components/carousel"
 import Link from "next/link"
 
 export default function Projects() {
-
+    const logoUrls = [
+        {
+            name: 'Amazon Web Services (AWS)',
+            url: '../../../logos/client_logos/awslogo.png'
+        },
+        {
+            name: 'Aditude',
+            url: '../../../logos/client_logos/aditudelogo.png'
+        },
+        {
+            name: 'Advanced Healthcare Services',
+            url: '../../../logos/client_logos/ahsllclogolong.png'
+        },
+        {
+            name: 'Betfully',
+            url: '../../../logos/client_logos/betfullylogo.png'
+        },
+        {
+            name: 'F.H. Paschen Construction',
+            url: '../../../logos/client_logos/fhplogo.png'
+        },
+        {
+            name: 'PricewaterhouseCoopers (PwC)',
+            url: '../../../logos/client_logos/pwclogo.svg'
+        },
+        {
+            name: 'University of Illinois Urbana-Champaign',
+            url: '../../../logos/client_logos/uiuclogo.png'
+        }
+    ]
 
     return (
         <div className='bg-mycolors-white relative w-screen h-screen flex justify-center items-center'>
             <div className='w-[80%]'>
                 <h1 className='flex justify-center text-[2rem] text-mycolors-black'>Projects</h1>
-                
-                <div className='w-full overflow-hidden'>
-                    <div id='carousel' className='flex w-full'>
-                        <img src='../../../logos/client_logos/aditudelogo.png' alt='Company 1' className='w-1/6 h-auto' />
-                        <img src='../../../logos/client_logos/ahsllclogolong.png' alt='Company 2' className='w-1/6 h-auto' />
-                        <img src='../../../logos/client_logos/fhplogo.png' alt='Company 3' className='w-1/6 h-auto' />
-                        <img src='../../../logos/client_logos/awslogo.png' alt='Company 4' className='w-1/6 h-auto' />
-                        <img src='../../../logos/client_logos/betfullylogo.png' alt='Company 5' className='w-1/6 h-auto' />
-                        <img src='../../../logos/client_logos/pwclogo.svg' alt='Company 1' className='w-1/6 h-auto' />
-                        <img src='../../../logos/client_logos/linestarlogolong.png' alt='Company 2' className='w-1/6 h-auto' />
-                    </div>
-                </div>
+
+                <Carousel logoUrls={logoUrls}/>
 
                 <div className='flex justify-center mt-8'>
                     <Link href='/'>
