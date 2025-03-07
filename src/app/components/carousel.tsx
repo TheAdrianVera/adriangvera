@@ -11,7 +11,7 @@ interface CarouselProps {
 const Carousel:React.FC<CarouselProps> = ({logoUrls}) => {
 
     return (
-        <div className='w-full overflow-hidden pt-10'>
+        <div className='w-full overflow-hidden pt-10 px-5'>
             <Marquee 
                 speed={100}
                 className='w-full'

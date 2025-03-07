@@ -44,9 +44,7 @@ export default function Projects() {
                 title='Portfolio'
                 subline='Learn more about my latest projects'
             />
-            <div className=''>
-                <Carousel logoUrls={logoUrls}/>
-            </div>
+            <Carousel logoUrls={logoUrls}/>
         </div>
     </div>
     )
