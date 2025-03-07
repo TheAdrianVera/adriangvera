@@ -11,10 +11,13 @@ interface CarouselProps {
 const Carousel:React.FC<CarouselProps> = ({logoUrls}) => {
 
     return (
-        <div className='w-full overflow-hidden pt-10 px-5'>
+        <div className='w-full overflow-hidden px-5'>
+            <div className='flex justify-center items-center'>
+                <h1 className='text-black text-3xl font-bold'>Experience</h1>
+            </div>
             <Marquee 
                 speed={100}
-                className='w-full'
+                className='w-full pt-10'
             >
                 {logoUrls.map((logo, index)=>(
                     <img
