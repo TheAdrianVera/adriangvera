@@ -10,7 +10,10 @@ export default function Contact() {
     
     <div className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'>
         <PageHeader color='black'/>
-        <div className='w-screen h-screen flex justify-center items-center'>
+        <div className='w-screen h-screen flex flex-col'>
+            <div className='text-black'>
+                YALA
+            </div>
             <div className=''>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                     <ContactCard type='email' title='Email' url='agvm94@gmail.com' />

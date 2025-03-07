@@ -8,7 +8,7 @@ const PageHeader:React.FC<PageHeaderProps> = ({color}) => {
 
 
     return (
-        <div className={`w-[100%] px-5 pt-10 flex justify-between items-center text-${color} text-lg absolute`}>
+        <div className={`w-[100%] px-5 pt-10 flex justify-between items-center text-${color} text-lg`}>
             <Link
                href='/' 
             >

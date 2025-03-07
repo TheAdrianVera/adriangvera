@@ -1,6 +1,7 @@
 import { IoArrowBack } from "react-icons/io5"
 import Carousel from "../components/Carousel"
 import PageHeader from "../components/PageHeader"
+import PageTitle from "../components/PageTitle"
 import Link from "next/link"
 
 export default function Projects() {
@@ -38,7 +39,8 @@ export default function Projects() {
     return (
     <div className='bg-mycolors-white w-screen h-[100%] flex-col'>
         <PageHeader color='black' />
-        <div className='w-screen h-screen flex justify-center items-center'>
+        <div className='w-screen h-screen flex flex-col'>
+            <PageTitle />
             <div className=''>
                 <Carousel logoUrls={logoUrls}/>
             </div>
