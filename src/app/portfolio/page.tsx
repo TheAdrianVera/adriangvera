@@ -1,9 +1,7 @@
-import { IoArrowBack } from "react-icons/io5"
 import Carousel from "../components/Carousel"
 import PageHeader from "../components/PageHeader"
 import PageTitle from "../components/PageTitle"
 import PortfolioSection from "../components/PortfolioSection"
-import Link from "next/link"
 
 export default function Projects() {
     const logoUrls = [

@@ -1,9 +1,6 @@
-import Link from "next/link"
 import ContactCard from "../components/ContactCard"
 import PageHeader from "../components/PageHeader"
 import PageTitle from "../components/PageTitle"
-import { IoArrowBack } from "react-icons/io5"
-
 
 export default function Contact() {
 
