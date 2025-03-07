@@ -40,7 +40,10 @@ export default function Projects() {
     <div className='bg-mycolors-white w-screen h-[100%] flex-col'>
         <PageHeader color='black' />
         <div className='w-screen h-screen flex flex-col'>
-            <PageTitle />
+            <PageTitle 
+                title='Portfolio'
+                subline='Learn more about my latest projects'
+            />
             <div className=''>
                 <Carousel logoUrls={logoUrls}/>
             </div>

@@ -1,13 +1,29 @@
 interface PageHeaderProps {
     title?: string
+    subline?: string
 }
 
 
-const PageHeader:React.FC<PageHeaderProps> = ({title}) => {
+const PageHeader:React.FC<PageHeaderProps> = ({title, subline}) => {
+
+    if (title && !subline) {
+        subline = ""
+    }
 
     return (
-        <div className='text-black'>
-            PAGE TITLE
+        <div className='py-20 px-5'>
+            {title ? (
+                <>
+                <div className='text-black'>
+                    <div className='text-4xl font-bold'>{title}</div>
+                    <div className='text-xl text-gray-600'>{subline}</div>
+                </div>
+                {/* Divider line */}
+                <div className='border-t border-black-300 my-4'></div>
+                </>
+            ): (
+                <div></div>
+            )}
         </div>
     )
 }
