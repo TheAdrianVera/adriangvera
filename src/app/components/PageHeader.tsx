@@ -23,12 +23,12 @@ const PageHeader:React.FC<PageHeaderProps> = ({color}) => {
                 <Link
                     href='/portfolio'
                 >
-                    <div className='hover:text-mycolors-orange'>Portfolio</div>
+                    <div className='hover:text-mycolors-orange font-semibold'>Portfolio</div>
                 </Link>
                 <Link
                     href='/contact'
                 >
-                    <div className='pl-5 hover:text-mycolors-orange'>Contact</div>
+                    <div className='pl-5 hover:text-mycolors-orange font-semibold'>Contact</div>
                 </Link>
             </div>
         </div>        
