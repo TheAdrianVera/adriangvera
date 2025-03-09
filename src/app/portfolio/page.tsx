@@ -1,7 +1,7 @@
-import Carousel from "../components/Carousel"
 import PageHeader from "../components/PageHeader"
 import PageTitle from "../components/PageTitle"
 import PortfolioSection from "../components/PortfolioSection"
+import Carousel from "../components/Carousel"
 
 export default function Projects() {
     const logoUrls = [
