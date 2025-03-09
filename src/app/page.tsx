@@ -1,6 +1,7 @@
 import React from "react"
 import Particles from "./components/Particles"
 import Link from "next/link"
+import Image from "next/image"
 
 const navigation = [
   { name: "Portfolio", href: "/portfolio" },
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden">
       <div className='Logo'>
-        <img className='w-16' src='/logos/adriangvera-com-white.png' alt='Adriangvera.com Logo'/>
+        <Image width={50} height={50} className='w-16' src='/logos/adriangvera-com-white.png' alt='Adriangvera.com Logo' />
       </div>
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
