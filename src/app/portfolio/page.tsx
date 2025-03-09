@@ -7,31 +7,31 @@ export default function Projects() {
     const logoUrls = [
         {
             name: 'Amazon Web Services (AWS)',
-            url: '../../../logos/client_logos/awslogo.png'
+            url: '/logos/client_logos/awslogo.png'
         },
         {
             name: 'Aditude',
-            url: '../../../logos/client_logos/aditudelogo.png'
+            url: '/logos/client_logos/aditudelogo.png'
         },
         {
             name: 'Advanced Healthcare Services',
-            url: '../../../logos/client_logos/ahsllclogolong.png'
+            url: '/logos/client_logos/ahsllclogolong.png'
         },
         {
             name: 'Betfully',
-            url: '../../../logos/client_logos/betfullylogo.png'
+            url: '/logos/client_logos/betfullylogo.png'
         },
         {
             name: 'F.H. Paschen Construction',
-            url: '../../../logos/client_logos/fhplogo.png'
+            url: '/logos/client_logos/fhplogo.png'
         },
         {
             name: 'PricewaterhouseCoopers (PwC)',
-            url: '../../../logos/client_logos/pwclogo.svg'
+            url: '/logos/client_logos/pwclogo.svg'
         },
         {
             name: 'University of Illinois Urbana-Champaign',
-            url: '../../../logos/client_logos/uiuclogo.png'
+            url: '/logos/client_logos/uiuclogo.png'
         }
     ]
 

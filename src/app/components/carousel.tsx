@@ -1,4 +1,6 @@
 import Marquee from "react-fast-marquee"
+import Image from "next/image"
+
 interface Logo {
     name: string,
     url: string
@@ -20,11 +22,13 @@ const Carousel:React.FC<CarouselProps> = ({logoUrls}) => {
                 className='w-full pt-10'
             >
                 {logoUrls.map((logo, index)=>(
-                    <img
+                    <Image 
                         key={index} 
                         src={logo.url}
                         alt={logo.name}
-                        className='w-auto h-20 px-6'    
+                        width={200}
+                        height={50}
+                        className='w-auto h-20 px-6'
                     />
                 ))}
             </Marquee>
