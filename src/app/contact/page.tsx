@@ -1,6 +1,6 @@
-import ContactCard from "../components/ContactCard"
-import PageHeader from "../components/PageHeader"
-import PageTitle from "../components/PageTitle"
+import ContactCard from "@components/ContactCard"
+import PageHeader from "@components/PageHeader"
+import PageTitle from "@components/PageTitle"
 
 export default function Contact() {
 
