@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import Particles from "./components/Particles"
+import Particlez from "./components/Particlez"
 
 const navigation = [
   { name: "Portfolio", href: "/portfolio" },
@@ -27,7 +27,7 @@ export default function Home() {
           ))}
         </ul>
       </nav>
-      <Particles
+      <Particlez
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
