@@ -1,12 +1,20 @@
+"use client"
+
 import ContactCard from "@components/ContactCard"
 import Navbar from "@/app/components/Navbar"
 import PageTitle from "@components/PageTitle"
+import { motion as m } from "motion/react"
 
 export default function Contact() {
 
     return (
     
-    <div className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'>
+    <m.div
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        transition={{ duration: 1.75, ease: "easeOut"}}
+        className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'
+    >
         <Navbar color='black'/>
         <div className='w-screen h-screen flex flex-col'>
             <PageTitle />
@@ -16,7 +24,7 @@ export default function Contact() {
                 <ContactCard type='linkedin' title='LinkedIn' url='https://www.linkedin.com/in/adrian-vera-6180a7b6/' />
             </div>
         </div>
-    </div>
+    </m.div>
  
     )
 }
