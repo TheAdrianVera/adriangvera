@@ -14,27 +14,24 @@ const navigation = [
 
 export default function Home() {
   return (
-    <m.div
-      initial={{ opacity: 0}}
-      animate={{ opacity: 1}}
-      transition={{ duration: 1.75, ease: "easeOut"}}
+    <div
       className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden">
-      <div className='Logo'>
-        <Image width={50} height={50} className='w-16' src='/logos/adriangvera-com-white.png' alt='Adriangvera.com Logo' />
-      </div>
-      <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
-          {navigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-white"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </ul>
-      </nav>
+        <div className='Logo'>
+          <Image width={50} height={50} className='w-16' src='/logos/adriangvera-com-white.png' alt='Adriangvera.com Logo' />
+        </div>
+        <nav className="my-16 animate-fade-in">
+          <ul className="flex items-center justify-center gap-4">
+            {navigation.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm duration-500 text-zinc-500 hover:text-white"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </ul>
+        </nav>
       <Particlez
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
@@ -48,6 +45,7 @@ export default function Home() {
           Chicago Based Software Engineer
         </h2>
       </div>
-    </m.div>
+
+    </div>
   )
 }

@@ -3,28 +3,25 @@
 import ContactCard from "@components/ContactCard"
 import Navbar from "@/app/components/Navbar"
 import PageTitle from "@components/PageTitle"
-import { motion as m } from "motion/react"
 
 export default function Contact() {
 
     return (
     
-    <m.div
-        initial={{ opacity: 0}}
-        animate={{ opacity: 1}}
-        transition={{ duration: 1.75, ease: "easeOut"}}
-        className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'
-    >
-        <Navbar color='black'/>
-        <div className='w-screen h-screen flex flex-col'>
-            <PageTitle />
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
-                <ContactCard type='email' title='Email' url='agvm94@gmail.com' />
-                <ContactCard type='github' title='Github' url='https://github.com/TheAdrianVera' />
-                <ContactCard type='linkedin' title='LinkedIn' url='https://www.linkedin.com/in/adrian-vera-6180a7b6/' />
+        <div
+            className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'
+        >
+            <Navbar color='black'/>
+
+            <div className='w-screen h-screen flex flex-col'>
+                <PageTitle />
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
+                    <ContactCard type='email' title='Email' url='agvm94@gmail.com' />
+                    <ContactCard type='github' title='Github' url='https://github.com/TheAdrianVera' />
+                    <ContactCard type='linkedin' title='LinkedIn' url='https://www.linkedin.com/in/adrian-vera-6180a7b6/' />
+                </div>
             </div>
         </div>
-    </m.div>
  
     )
 }
