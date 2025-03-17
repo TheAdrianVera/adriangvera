@@ -1,7 +1,10 @@
+"use client"
+
 import Navbar from "@/app/components/Navbar"
 import PageTitle from "@components/PageTitle"
 import PortfolioSection from "@components/PortfolioSection"
 import Carousel from "@/app/components/LogoMarquee"
+import { motion as m } from "motion/react" 
 
 export default function Projects() {
     const logoUrls = [
@@ -46,18 +49,23 @@ export default function Projects() {
     ]
 
     return (
-    <div className='bg-mycolors-white w-screen min-h-screen flex-col'>
-        <Navbar color='black' />
-        <div className='w-screen min-h-screen flex flex-col overflow-auto'>
-            <PageTitle 
-                title='Portfolio'
-                subline='Learn more about my latest projects'
-            />
-            <PortfolioSection
-                projects = {myProjects}
-            />
-            <Carousel logoUrls={logoUrls}/>
-        </div>
-    </div>
+        <m.div
+            initial={{ opacity: 0}}
+            animate={{ opacity: 1}}
+            transition={{ duration: 1.75, ease: "easeOut"}}
+            className='bg-mycolors-white w-screen min-h-screen flex-col'
+        >
+            <Navbar color='black' />
+            <div className='w-screen min-h-screen flex flex-col overflow-auto'>
+                <PageTitle 
+                    title='Portfolio'
+                    subline='Learn more about my latest projects'
+                />
+                <PortfolioSection
+                    projects = {myProjects}
+                />
+                <Carousel logoUrls={logoUrls}/>
+            </div>
+        </m.div>
     )
 }
