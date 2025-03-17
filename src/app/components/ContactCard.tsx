@@ -26,12 +26,12 @@ const ContactCard:React.FC<ContactCardProps> = ({url, title, type}) => {
     return (
         <>
             { type === 'email' ? (
-                <a href={`mailto:`+url} target="_blank" className='p-6 w-[100%] border-black border-2 rounded-lg flex flex-col items-center hover:bg-gray-900 group transition duration-500 ease-in-out transform hover:scale-105 hover:rotate-2'>
+                <a href={`mailto:`+url} target="_blank" className='p-6 md:h-64 md:justify-center w-[100%] border-black border-2 rounded-lg flex flex-col items-center hover:bg-gray-900 group transition duration-500 ease-in-out transform hover:scale-105 hover:rotate-2'>
                     {getIcon(type)}
                     <h2 className='text-xl font-semibold text-black group-hover:text-white'>{title}</h2>
                 </a>
             ) : (
-                <a href={url} target="_blank" className='p-6 w-[100%] border-black border-2 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-900 group transition duration-500 ease-in-out transform hover:scale-105 hover:rotate-2'>
+                <a href={url} target="_blank" className='p-6 md:h-64 md:justify-center w-[100%] border-black border-2 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-900 group transition duration-500 ease-in-out transform hover:scale-105 hover:rotate-2'>
                     {getIcon(type)}
                     <h2 className='text-xl font-semibold text-black group-hover:text-white'>{title}</h2>
                 </a>
