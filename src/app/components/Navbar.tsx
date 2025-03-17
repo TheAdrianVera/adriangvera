@@ -1,10 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
-interface PageHeaderProps {
+interface NavbarProps {
     color: string
 }
 
-const PageHeader:React.FC<PageHeaderProps> = ({color}) => {
+const Navbar:React.FC<NavbarProps> = ({color}) => {
 
 
     return (
@@ -35,4 +35,4 @@ const PageHeader:React.FC<PageHeaderProps> = ({color}) => {
     )
 }
 
-export default PageHeader
+export default Navbar
