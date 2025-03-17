@@ -1,5 +1,3 @@
-"use client"
-
 import ContactCard from "@components/ContactCard"
 import Navbar from "@/app/components/Navbar"
 import PageTitle from "@components/PageTitle"

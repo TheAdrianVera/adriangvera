@@ -1,5 +1,3 @@
-"use client"
-
 import Navbar from "@/app/components/Navbar"
 import PageTitle from "@components/PageTitle"
 import PortfolioSection from "@components/PortfolioSection"

@@ -1,8 +1,11 @@
-import Image from "next/image"
-import Link from "next/link"
+"use client"
+
+import Image from 'next/image'
+import Link from 'next/link'
 interface NavbarProps {
     color: string
 }
+
 
 const Navbar:React.FC<NavbarProps> = ({color}) => {
 
