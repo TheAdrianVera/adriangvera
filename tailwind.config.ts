@@ -17,7 +17,8 @@ export default {
           sagegreen: '#457353',
           periwinkle: '#b7c0ee',
           white: '#FFF',
-          black: '#000'
+          black: '#000',
+          darkblack: '#0a0a0a',
         } 
       },
     },

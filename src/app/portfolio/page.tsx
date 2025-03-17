@@ -49,8 +49,6 @@ export default function Projects() {
         <div
             className='bg-mycolors-white w-screen min-h-screen flex-col'
         >
-            <Navbar color='black' />
-
             <div className='w-screen min-h-screen flex flex-col overflow-auto'>
                 <PageTitle 
                     title='Portfolio'
