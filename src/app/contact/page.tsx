@@ -6,9 +6,7 @@ export default function Contact() {
 
     return (
     
-        <div
-            className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'
-        >
+        <div className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'>
             <Navbar />
             <div className='w-screen h-screen flex flex-col'>
                 <PageTitle />
