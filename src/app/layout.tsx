@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import Navbar from "@components/Navbar"
+import AnimateBody from "@components/motion/AnimateBody"
 
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <Navbar />
-        {children}
+        <AnimateBody>{children}</AnimateBody>
       </body>
     </html>
   )
