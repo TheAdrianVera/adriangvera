@@ -9,6 +9,7 @@ export default function Contact() {
         <div
             className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'
         >
+            <Navbar />
             <div className='w-screen h-screen flex flex-col'>
                 <PageTitle />
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
