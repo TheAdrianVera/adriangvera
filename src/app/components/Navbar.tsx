@@ -29,7 +29,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className={`w-[100%] px-5 pt-10 flex justify-between items-center ${bgColor} ${textColor} text-lg`}>
+        <div className={`w-[100%] px-5 py-10 flex justify-between items-center ${textColor} text-lg`}>
             <Link href='/'>
                 <Image 
                     src={`/logos/${logoUrl}`}

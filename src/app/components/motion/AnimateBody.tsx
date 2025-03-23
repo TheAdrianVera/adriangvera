@@ -15,7 +15,7 @@ const AnimateBody: React.FC<{ children: React.ReactNode}> = ({children}) => {
                 animate={{ y: "0%" }} // New page slides into place
                 exit={{ y: "0%" }} // Keep the old page in place
                 transition={{ duration: 0.75, ease: "easeOut" }} // Smooth transition
-                className=''
+                className='absolute inset-0 -z-10'
             >
                 {children}
             </motion.div>

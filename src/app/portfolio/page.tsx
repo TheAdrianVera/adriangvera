@@ -47,7 +47,7 @@ export default function Projects() {
     return (
         <div>
             <div className='bg-mycolors-white w-[100%] h-[100%] min-h-screen flex-col'>
-                <div className='w-screen min-h-screen flex flex-col overflow-auto'>
+                <div className='w-screen min-h-screen flex flex-col overflow-auto pt-10'>
                     <PageTitle 
                         title='Portfolio'
                         subline='Learn more about my latest projects'
