@@ -11,10 +11,9 @@ const AnimateBody: React.FC<{ children: React.ReactNode}> = ({children}) => {
         <AnimatePresence initial={false}>
             <motion.div
                 key={pathname} // Re-animates when route changes
-                initial={{ y: "100%" }} // Start the new page below
-                animate={{ y: "0%" }} // New page slides into place
-                transition={{ duration: 0.75, ease: "easeOut" }} // Smooth transition
-                exit={{ opacity: 0 }}
+                initial={{ opacity: 0 }} // Start the new page below
+                animate={{ opacity: 1 }} // New page slides into place
+                transition={{ duration: 0.95, ease: "easeOut" }} // Smooth transition
                 className='absolute top-0 left-0 w-full h-full'
             >
                 {children}
