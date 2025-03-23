@@ -1,11 +1,7 @@
 "use client"
 
 import React from "react"
-import Link from "next/link"
-import Image from "next/image"
 import Particlez from "./components/Particlez"
-import Navbar from "@components/Navbar"
-
 
 const navigation = [
   { name: "Portfolio", href: "/portfolio" },
@@ -15,7 +11,6 @@ const navigation = [
 export default function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
       <div className="flex flex-col items-center justify-center w-[100%] h-[100%] min-h-screen overflow-hidden">
         <Particlez
           className="absolute inset-0 -z-10 animate-fade-in"
