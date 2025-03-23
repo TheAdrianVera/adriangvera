@@ -46,11 +46,9 @@ export default function Projects() {
     ]
 
     return (
-        <>
-            <Navbar />
-            <div
-                className='bg-mycolors-white w-screen min-h-screen flex-col'
-            >
+        <div>
+            {/* <Navbar /> */}
+            <div className='bg-mycolors-white w-screen min-h-screen flex-col'>
                 <div className='w-screen min-h-screen flex flex-col overflow-auto'>
                     <PageTitle 
                         title='Portfolio'
@@ -62,6 +60,6 @@ export default function Projects() {
                     <Carousel logoUrls={logoUrls}/>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

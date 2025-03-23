@@ -6,9 +6,9 @@ export default function Contact() {
 
     return (
     
-        <div className='w-screen h-[100%] flex-col bg-mycolors-periwinkle'>
-            <Navbar />
-            <div className='w-screen h-screen flex flex-col'>
+        <div>
+            {/* <Navbar /> */}
+            <div className='bg-mycolors-periwinkle w-screen min-h-screen flex-col'>
                 <PageTitle />
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
                     <ContactCard type='email' title='Email' url='agvm94@gmail.com' />
