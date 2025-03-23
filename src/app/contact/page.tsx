@@ -8,7 +8,7 @@ export default function Contact() {
     
         <div>
             {/* <Navbar /> */}
-            <div className='bg-mycolors-periwinkle w-screen min-h-screen flex-col'>
+            <div className='bg-mycolors-periwinkle w-[100%] h-[100%] min-h-screen flex-col'>
                 <PageTitle />
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
                     <ContactCard type='email' title='Email' url='agvm94@gmail.com' />
