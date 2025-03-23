@@ -6,7 +6,7 @@ export default function Contact() {
     return (
     
         <div>
-            <div className='bg-mycolors-periwinkle w-[100%] h-[100%] min-h-screen flex-col'>
+            <div className='bg-mycolors-periwinkle min-h-screen flex-col'>
                 <div className='pt-10'>
                     <PageTitle />
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
