@@ -1,5 +1,4 @@
 import ContactCard from "@components/ContactCard"
-import Navbar from "@/app/components/Navbar"
 import PageTitle from "@components/PageTitle"
 
 export default function Contact() {
@@ -7,7 +6,6 @@ export default function Contact() {
     return (
     
         <div>
-            {/* <Navbar /> */}
             <div className='bg-mycolors-periwinkle w-[100%] h-[100%] min-h-screen flex-col'>
                 <PageTitle />
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
