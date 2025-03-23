@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
       {/* <Navbar /> */}
-      <div className="flex flex-col items-center justify-center w-screen h-[100%] min-h-screen overflow-hidden">
+      <div className="flex flex-col items-center justify-center w-[100%] h-[100%] min-h-screen overflow-hidden">
         <Particlez
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={100}

@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased min-w-[400px]`}
       >
         <Navbar />
         <AnimateBody>{children}</AnimateBody>
