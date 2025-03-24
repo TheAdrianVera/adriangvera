@@ -9,22 +9,19 @@ const Navbar = () => {
     const path = usePathname()
 
     let textColor = 'text-white'
-    let bgColor = 'bg-mycolors-darkblack'
     let logoUrl = 'adriangvera-com-white.png'
 
     switch (path) {
         case '/portfolio':
-            bgColor = 'bg-white'
             textColor = 'text-black'
             logoUrl = 'adriangvera-com.png'
             break
         case '/contact':
-            bgColor = 'bg-mycolors-periwinkle'
             textColor = 'text-black'
             logoUrl = 'adriangvera-com.png'
             break
         default:
-            bgColor = 'bg-mycolors-darkblack'
+            textColor = 'text-white'
             break
     }
 

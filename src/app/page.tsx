@@ -3,10 +3,6 @@
 import React from "react"
 import Particlez from "./components/Particlez"
 
-const navigation = [
-  { name: "Portfolio", href: "/portfolio" },
-  { name: "Contact", href: "/contact" },
-]
 
 export default function Home() {
   return (
