@@ -1,6 +1,3 @@
-"use client"
-
-import Navbar from "@/app/components/Navbar"
 import PageTitle from "@components/PageTitle"
 import PortfolioSection from "@components/PortfolioSection"
 import Carousel from "@/app/components/LogoMarquee"
@@ -48,20 +45,18 @@ export default function Projects() {
     ]
 
     return (
-        <div
-            className='bg-mycolors-white w-screen min-h-screen flex-col'
-        >
-            <Navbar color='black' />
-
-            <div className='w-screen min-h-screen flex flex-col overflow-auto'>
-                <PageTitle 
-                    title='Portfolio'
-                    subline='Learn more about my latest projects'
-                />
-                <PortfolioSection
-                    projects = {myProjects}
-                />
-                <Carousel logoUrls={logoUrls}/>
+        <div>
+            <div className='bg-mycolors-white w-[100%] h-[100%] min-h-screen flex-col'>
+                <div className='w-screen min-h-screen flex flex-col overflow-auto pt-10'>
+                    <PageTitle 
+                        title='Portfolio'
+                        subline='Learn more about my latest projects'
+                    />
+                    <PortfolioSection
+                        projects = {myProjects}
+                    />
+                    <Carousel logoUrls={logoUrls}/>
+                </div>
             </div>
         </div>
     )
