@@ -25,7 +25,7 @@ const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
 
                         {/* Special Skills */}
                         {project.special?.map((skill, skillIndex)=>(
-                            <span key={skillIndex} className='bg-gray-200 text-gray-800 text-sm font-medium mr-2 mb-2 px-2.5 py-0.5 rounded'>
+                            <span key={skillIndex} className='bg-purple-200 text-purple-800 text-sm font-medium mr-2 mb-2 px-2.5 py-0.5 rounded'>
                                 {skill}
                             </span>
                         ))}
@@ -39,7 +39,7 @@ const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
 
                         {/* Design Skills */}
                         {project.design?.map((skill, skillIndex)=>(
-                            <span key={skillIndex} className='bg-gray-200 text-gray-800 text-sm font-medium mr-2 mb-2 px-2.5 py-0.5 rounded'>
+                            <span key={skillIndex} className='bg-green-200 text-green-800 text-sm font-medium mr-2 mb-2 px-2.5 py-0.5 rounded'>
                                 {skill}
                             </span>
                         ))}
