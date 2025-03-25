@@ -13,7 +13,7 @@ interface CarouselProps {
 const Carousel:React.FC<CarouselProps> = ({logoUrls}) => {
 
     return (
-        <div className='w-full overflow-hidden px-5'>
+        <div className='w-full overflow-hidden px-5 pb-20'>
             <div className='flex justify-center items-center'>
                 <h1 className='text-black text-3xl font-bold'>Experience</h1>
             </div>
