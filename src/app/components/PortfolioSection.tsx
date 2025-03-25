@@ -22,11 +22,28 @@ const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
                     <div className='text-xl font-bold mb-2'>{project.title}</div>
                     <div className='text-gray-600'>{project.description}</div>
                     <div className='mt-4 flex flex-wrap'>
+
+                        {/* Special Skills */}
+                        {project.special?.map((skill, skillIndex)=>(
+                            <span key={skillIndex} className='bg-gray-200 text-gray-800 text-sm font-medium mr-2 mb-2 px-2.5 py-0.5 rounded'>
+                                {skill}
+                            </span>
+                        ))}
+
+                        {/* Skills */}
                         {project.skills.map((skill, skillIndex) => (
                             <span key={skillIndex} className='bg-gray-200 text-gray-800 text-sm font-medium mr-2 mb-2 px-2.5 py-0.5 rounded'>
                                 {skill}
                             </span>
                         ))}
+
+                        {/* Design Skills */}
+                        {project.design?.map((skill, skillIndex)=>(
+                            <span key={skillIndex} className='bg-gray-200 text-gray-800 text-sm font-medium mr-2 mb-2 px-2.5 py-0.5 rounded'>
+                                {skill}
+                            </span>
+                        ))}
+
                     </div>
                 </div>
             ))}
