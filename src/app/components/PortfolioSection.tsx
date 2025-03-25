@@ -16,7 +16,7 @@ const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
     const sortedProjects = projects.sort((a, b) => b.year - a.year)
 
     return (
-        <div className='text-black flex flex-col justify-center pb-20 px-5'>
+        <div className='text-black flex flex-col justify-center pb-20 px-5 md:px-20 lg:px-40 transition-all duration-300'>
             {sortedProjects.map((project, index)=>(
                 <div key={index} className='bg-white shadow-md rounded-lg p-6 mb-6 border border-black-300 transition-transform transform hover:scale-105 hover:shadow-lg'>
                     <div className='text-xl font-bold mb-2'>{project.title}</div>
