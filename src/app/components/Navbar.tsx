@@ -28,7 +28,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className={`relative z-20 w-[100%] px-5 md:px-20 lg:px-40 py-10 flex justify-between items-center ${textColor} text-lg`}>
+        <div className={`relative z-20 w-[100%] px-5 md:px-20 lg:px-40 transition-all duration-300 py-10 flex justify-between items-center ${textColor} text-lg`}>
             <Link href='/'>
                 <Image 
                     src={`/logos/${logoUrl}`}
