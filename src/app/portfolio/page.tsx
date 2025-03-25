@@ -80,7 +80,7 @@ export default function Projects() {
             special: ['Redesign']
         },
         {
-            title: 'Linestar 2022 Redesign',
+            title: 'Linestar Website',
             year: 2022,
             logo: 'linestar',
             description: 'Led the front-end redesign of LineStar, a sports betting analytics platform with 1M+ users. Translated Figma designs into responsive AngularJS UI, refactored .NET code, and delivered the full redesign in five months.',
