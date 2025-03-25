@@ -4,6 +4,8 @@ interface Project {
     logo: string
     description: string
     skills: string[]
+    design?: string[]
+    special?: string[]
 }
 
 interface PortfioSectionProps {
