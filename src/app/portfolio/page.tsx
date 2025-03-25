@@ -1,6 +1,7 @@
 import PageTitle from "@components/PageTitle"
 import PortfolioSection from "@components/PortfolioSection"
-import Carousel from "@/app/components/LogoMarquee"
+import Carousel from "@components/LogoMarquee"
+import Footer from "@components/Footer"
 
 export default function Projects() {
     const logoUrls = [
@@ -109,6 +110,7 @@ export default function Projects() {
                     />
                     <Carousel logoUrls={logoUrls}/>
                 </div>
+                <Footer />
             </div>
         </div>
     )
