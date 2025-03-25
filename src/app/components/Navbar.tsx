@@ -10,6 +10,7 @@ const Navbar = () => {
 
     let textColor = 'text-white'
     let logoUrl = 'adriangvera-com-white.png'
+    let hoverColor = 'text-mycolors-orange'
 
     switch (path) {
         case '/portfolio':
@@ -19,6 +20,7 @@ const Navbar = () => {
         case '/contact':
             textColor = 'text-black'
             logoUrl = 'adriangvera-com.png'
+            hoverColor = 'text-white'
             break
         default:
             textColor = 'text-white'
@@ -37,10 +39,10 @@ const Navbar = () => {
             </Link>
             <div className='flex'>
                 <Link href='/portfolio'>
-                    <div className='hover:text-mycolors-orange font-semibold'>Portfolio</div>
+                    <div className={`hover:${hoverColor} font-semibold`}>Portfolio</div>
                 </Link>
                 <Link href='/contact'>
-                    <div className='pl-5 hover:text-mycolors-orange font-semibold'>Contact</div>
+                    <div className={`pl-5 hover:${hoverColor} font-semibold`}>Contact</div>
                 </Link>
             </div>
         </div>        
