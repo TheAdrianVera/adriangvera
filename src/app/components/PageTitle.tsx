@@ -11,7 +11,7 @@ const PageHeader:React.FC<PageHeaderProps> = ({title, subline}) => {
     }
 
     return (
-        <div className='pt-20 pb-10 px-5'>
+        <div className='pt-20 pb-10 px-5 md:px-20 lg:px-40'>
             {title ? (
                 <>
                 <div className='text-black'>
