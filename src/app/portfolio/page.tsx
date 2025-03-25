@@ -7,31 +7,38 @@ export default function Projects() {
     const logoUrls = [
         {
             name: 'Amazon Web Services (AWS)',
-            url: '/logos/client_logos/awslogo.png'
+            url: '/logos/client_logos/awslogo.png',
+            website: 'https://aws.amazon.com/'
         },
         {
             name: 'Aditude',
-            url: '/logos/client_logos/aditudelogo.png'
+            url: '/logos/client_logos/aditudelogo.png',
+            website: 'https://www.aditude.com/'
         },
         {
             name: 'Advanced Healthcare Services',
-            url: '/logos/client_logos/ahsllclogolong.png'
+            url: '/logos/client_logos/ahsllclogolong.png',
+            website: 'https://www.ahsllc.org/'
         },
         {
             name: 'Betfully',
-            url: '/logos/client_logos/betfullylogo.png'
+            url: '/logos/client_logos/betfullylogo.png',
+            website: 'https://betfully.com/'
         },
         {
             name: 'F.H. Paschen Construction',
-            url: '/logos/client_logos/fhplogo.png'
+            url: '/logos/client_logos/fhplogo.png',
+            website: 'https://www.fhpaschen.com/'
         },
         {
             name: 'PricewaterhouseCoopers (PwC)',
-            url: '/logos/client_logos/pwclogo.svg'
+            url: '/logos/client_logos/pwclogo.svg',
+            website: 'https://www.pwc.com/gx/en/services/consulting/technology.html'
         },
         {
             name: 'University of Illinois Urbana-Champaign',
-            url: '/logos/client_logos/uiuclogo.png'
+            url: '/logos/client_logos/uiuclogo.png',
+            website: 'https://giesbusiness.illinois.edu/experience/academies-centers/subsistence-marketplaces-initiative'
         }
     ]
 
