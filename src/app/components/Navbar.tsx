@@ -28,21 +28,22 @@ const Navbar = () => {
     }
 
     return (
-        <div className={`relative z-20 w-[100%] px-5 md:px-20 lg:px-40 transition-all duration-300 py-10 flex justify-between items-center ${textColor} text-lg`}>
+        <div className={`relative z-20 w-[100%] px-5 md:px-20 lg:px-40 transition-all duration-300 py-10 flex justify-between items-center ${textColor} text-xl md:text-2xl`}>
             <Link href='/'>
                 <Image 
                     src={`/logos/${logoUrl}`}
                     alt='Home' 
-                    width={40} 
-                    height={40}
+                    width={50} 
+                    height={50}
+                    className="md:w-16 md:h-16"
                 />
             </Link>
-            <div className='flex'>
+            <div className='flex space-x-8'>
                 <Link href='/portfolio'>
-                    <div className={`hover:${hoverColor} font-semibold`}>Portfolio</div>
+                    <div className={`hover:${hoverColor} font-semibold transition-colors duration-200`}>Portfolio</div>
                 </Link>
                 <Link href='/contact'>
-                    <div className={`pl-5 hover:${hoverColor} font-semibold`}>Contact</div>
+                    <div className={`hover:${hoverColor} font-semibold transition-colors duration-200`}>Contact</div>
                 </Link>
             </div>
         </div>        
