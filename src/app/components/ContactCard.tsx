@@ -13,27 +13,36 @@ const ContactCard:React.FC<ContactCardProps> = ({url, title, type}) => {
     const getIcon = (type: string) => {
         switch(type) {
             case 'linkedin':
-                return <FaLinkedinIn className='text-black group-hover:text-white'/>
+                return <FaLinkedinIn className='text-mycolors-black group-hover:text-mycolors-white'/>
             case 'github':
-                return <FaGithub className='text-black group-hover:text-white'/>
+                return <FaGithub className='text-mycolors-black group-hover:text-mycolors-white'/>
             case 'email':
-                return <MdEmail className='text-black group-hover:text-white'/>
+                return <MdEmail className='text-mycolors-black group-hover:text-mycolors-white'/>
             default:
                 return null
         }
+    }
+
+    const getCardStyle = (type: string) => {
+        // All cards have consistent styling
+        return 'hover:border-mycolors-black hover:shadow-lg'
     }
     
     return (
         <>
             { type === 'email' ? (
-                <a href={`mailto:`+url} target="_blank" className='p-6 md:h-64 md:justify-center w-[100%] border-black border-2 rounded-lg flex flex-col items-center hover:bg-gray-900 group transition duration-500 ease-in-out transform hover:scale-105 hover:rotate-2'>
-                    {getIcon(type)}
-                    <h2 className='text-xl font-semibold text-black group-hover:text-white'>{title}</h2>
+                <a href={`mailto:`+url} target="_blank" className={`p-6 md:p-8 lg:p-10 min-h-[200px] md:min-h-[240px] lg:min-h-[280px] w-full border-mycolors-black border-2 rounded-xl flex flex-col items-center justify-center hover:bg-mycolors-darkblack group transition-all duration-300 ease-in-out transform hover:scale-[1.02] bg-mycolors-periwinkle ${getCardStyle(type)}`}>
+                    <div className='mb-4 text-4xl md:text-5xl lg:text-6xl'>
+                        {getIcon(type)}
+                    </div>
+                    <h2 className='text-lg md:text-xl lg:text-2xl font-semibold text-mycolors-black group-hover:text-mycolors-white text-center'>{title}</h2>
                 </a>
             ) : (
-                <a href={url} target="_blank" className='p-6 md:h-64 md:justify-center w-[100%] border-black border-2 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-900 group transition duration-500 ease-in-out transform hover:scale-105 hover:rotate-2'>
-                    {getIcon(type)}
-                    <h2 className='text-xl font-semibold text-black group-hover:text-white'>{title}</h2>
+                <a href={url} target="_blank" className={`p-6 md:p-8 lg:p-10 min-h-[200px] md:min-h-[240px] lg:min-h-[280px] w-full border-mycolors-black border-2 rounded-xl flex flex-col items-center justify-center hover:bg-mycolors-darkblack group transition-all duration-300 ease-in-out transform hover:scale-[1.02] bg-mycolors-periwinkle ${getCardStyle(type)}`}>
+                    <div className='mb-4 text-4xl md:text-5xl lg:text-6xl'>
+                        {getIcon(type)}
+                    </div>
+                    <h2 className='text-lg md:text-xl lg:text-2xl font-semibold text-mycolors-black group-hover:text-mycolors-white text-center'>{title}</h2>
                 </a>
             )}
         </>
