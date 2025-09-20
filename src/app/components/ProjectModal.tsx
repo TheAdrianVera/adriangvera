@@ -48,9 +48,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             <div className="relative bg-white rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
                 {/* Header */}
                 <div className="flex justify-between items-center p-6 border-b border-gray-200">
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-                        {project.title}
-                    </h2>
+                    <div className="flex items-center gap-4">
+                        <img 
+                            src={`/logos/client_logos/square_logos/${project.logo}sqlogo.png`}
+                            alt={`${project.title} logo`}
+                            className="w-12 h-12 object-contain"
+                        />
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                            {project.title}
+                        </h2>
+                    </div>
                     <button
                         onClick={onClose}
                         className="text-gray-400 hover:text-gray-600 text-2xl font-bold"

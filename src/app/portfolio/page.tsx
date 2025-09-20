@@ -70,7 +70,7 @@ export default function Projects() {
         {
             title: 'Advanced Healthcare Services Website',
             year: 2025,
-            logo: 'advanced',
+            logo: 'ahsllc',
             description: 'Migrated their site from GoDaddy to Vercel, reducing costs. Rebuilt the site with TypeScript, React, and Tailwind, and implemented analytics tracking for better visitor insights. ',
             skills: ['React', 'Type Script', 'Vercel', 'AWS S3', 'HTML/CSS', 'Google Analytics', 'Meta Pixel Tracking', 'GoDaddy Migration'],
             special: ['Rehost', 'Redesign'],
@@ -80,7 +80,7 @@ export default function Projects() {
         {
             title: 'F.H. Paschen Construction Website',
             year: 2020,
-            logo: 'fhpaschen',
+            logo: 'fhp',
             description: 'Migrated their WordPress site to GoDaddy, cutting hosting costs. Built custom plugins and a project database to enhance website interactivity. Designed and developed a new site section, translating Figma designs into responsive WordPress code with PHP, JavaScript, HTML, and CSS.',
             skills: ['Javascript', 'AWS S3', 'PHP','HTML/CSS', 'Wordpress Development', 'mySQL', 'GoDaddy Hosting', 'GoDaddy Migration'],
             special: ['Rehost'],
