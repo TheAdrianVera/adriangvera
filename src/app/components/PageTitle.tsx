@@ -15,8 +15,8 @@ const PageHeader:React.FC<PageHeaderProps> = ({title, subline}) => {
             {title ? (
                 <>
                 <div className='text-black'>
-                    <div className='text-4xl font-bold'>{title}</div>
-                    <div className='text-xl text-gray-600'>{subline}</div>
+                    <div className='text-5xl md:text-6xl font-bold'>{title}</div>
+                    <div className='text-xl md:text-2xl text-gray-600'>{subline}</div>
                 </div>
                 {/* Divider line */}
                 <div className='border-t border-black-300 my-4'></div>
