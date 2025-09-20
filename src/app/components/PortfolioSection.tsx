@@ -1,3 +1,8 @@
+"use client"
+
+import { useState } from 'react'
+import ProjectModal from './ProjectModal'
+
 interface Project {
     title: string
     year: number
@@ -14,11 +19,27 @@ interface PortfioSectionProps {
 
 const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
     const sortedProjects = projects.sort((a, b) => b.year - a.year)
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    const openModal = (project: Project) => {
+        setSelectedProject(project)
+        setIsModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setIsModalOpen(false)
+        setSelectedProject(null)
+    }
 
     return (
         <div className='text-black flex flex-col justify-center pb-20 px-5 md:px-20 lg:px-40 transition-all duration-300'>
             {sortedProjects.map((project, index)=>(
-                <div key={index} className='bg-white shadow-lg rounded-lg p-6 md:p-8 mb-6 border border-gray-300 transition-all duration-300 transform hover:scale-105 hover:shadow-lg'>
+                <div 
+                    key={index} 
+                    className='bg-white shadow-lg rounded-lg p-6 md:p-8 mb-6 border border-gray-300 transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer'
+                    onClick={() => openModal(project)}
+                >
                     <div className='text-xl md:text-2xl font-bold mb-3'>{project.title}</div>
                     <div className='text-base md:text-lg text-gray-600'>{project.description}</div>
                     <div className='mt-4 flex flex-wrap'>
@@ -70,6 +91,13 @@ const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
                     </div>
                 </div>
             ))}
+            
+            {/* Modal */}
+            <ProjectModal 
+                project={selectedProject}
+                isOpen={isModalOpen}
+                onClose={closeModal}
+            />
         </div>
     )
 }
