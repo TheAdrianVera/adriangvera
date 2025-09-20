@@ -41,8 +41,17 @@ const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
                     className='bg-white shadow-lg rounded-lg p-6 md:p-8 mb-6 border border-gray-300 transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer'
                     onClick={() => openModal(project)}
                 >
-                    <div className='text-xl md:text-2xl font-bold mb-1'>{project.title}</div>
-                    <div className='mb-3 text-md md:text-lg'>{project.location[0]}, {project.location[1]} - {project.year}</div>
+                    <div className='flex items-start gap-4 mb-3'>
+                        <img 
+                            src={`/logos/client_logos/square_logos/${project.logo}sqlogo.png`}
+                            alt={`${project.title} logo`}
+                            className='w-16 h-16 object-contain flex-shrink-0'
+                        />
+                        <div className='flex-1'>
+                            <div className='text-xl md:text-2xl font-bold mb-1'>{project.title}</div>
+                            <div className='text-md md:text-lg text-gray-600'>{project.location[0]}, {project.location[1]} - {project.year}</div>
+                        </div>
+                    </div>
                     <div className='text-base md:text-lg text-gray-600'>{project.description}</div>
                     <div className='mt-4 flex flex-wrap'>
 
