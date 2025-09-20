@@ -6,24 +6,29 @@ import Footer from "@components/Footer"
 export default function Projects() {
     const logoUrls = [
         {
+            name: 'Advanced Healthcare Services',
+            url: '/logos/client_logos/ahsllclogolong.png',
+            website: 'https://www.ahsllc.org/'
+        },
+        {
             name: 'Amazon Web Services (AWS)',
             url: '/logos/client_logos/awslogo.png',
             website: 'https://aws.amazon.com/'
         },
         {
             name: 'Aditude',
-            url: '/logos/client_logos/aditudelogo.png',
+            url: '/logos/client_logos/aditudefulllogo.png',
             website: 'https://www.aditude.com/'
         },
         {
-            name: 'Advanced Healthcare Services',
-            url: '/logos/client_logos/ahsllclogolong.png',
-            website: 'https://www.ahsllc.org/'
+            name: 'Betfully',
+            url: '/logos/client_logos/betfullyfulllogo.png',
+            website: 'https://betfully.com/'
         },
         {
-            name: 'Betfully',
-            url: '/logos/client_logos/betfullylogo.png',
-            website: 'https://betfully.com/'
+            name: 'Erika\'s Lighthouse',
+            url: '/logos/client_logos/elhfulllogo.png',
+            website: 'https://erikaslighthouse.org/'
         },
         {
             name: 'F.H. Paschen Construction',
@@ -31,14 +36,14 @@ export default function Projects() {
             website: 'https://www.fhpaschen.com/'
         },
         {
+            name: 'University of Illinois Urbana-Champaign',
+            url: '/logos/client_logos/uiucfulllogo.png',
+            website: 'https://giesbusiness.illinois.edu/experience/academies-centers/subsistence-marketplaces-initiative'
+        },
+        {
             name: 'PricewaterhouseCoopers (PwC)',
             url: '/logos/client_logos/pwclogo.svg',
             website: 'https://www.pwc.com/gx/en/services/consulting/technology.html'
-        },
-        {
-            name: 'University of Illinois Urbana-Champaign',
-            url: '/logos/client_logos/uiuclogo.png',
-            website: 'https://giesbusiness.illinois.edu/experience/academies-centers/subsistence-marketplaces-initiative'
         }
     ]
 
