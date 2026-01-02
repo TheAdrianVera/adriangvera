@@ -20,6 +20,7 @@ export default function Contact() {
         <Footer 
             bgColor='mycolors-periwinkle'
             txtColor='black'
+            lnkColor='white'
         />
     </div>
     )
