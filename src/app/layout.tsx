@@ -14,8 +14,8 @@ import Navbar from "@components/Navbar"
 // });
 
 export const metadata: Metadata = {
-  title: "Adrian Vera | Software Engineer",
-  description: "Adrian Vera Northbrook based Software Engineer",
+  title: "Adrian Vera Software Enginer | Web Developer",
+  description: "Adrian Vera Chicago based Software Engineer & Web Developer",
 }
 
 export default function RootLayout({
