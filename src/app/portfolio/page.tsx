@@ -143,6 +143,7 @@ export default function Projects() {
                 <Footer 
                     bgColor='white'
                     txtColor='black'
+                    lnkColor='mycolors-orange'
                 />
             </div>
         </div>
