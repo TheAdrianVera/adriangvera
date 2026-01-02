@@ -1,11 +1,12 @@
 import ContactCard from "@components/ContactCard"
 import PageTitle from "@components/PageTitle"
+import Footer from "@components/Footer"
 
 export default function Contact() {
 
     return (
     
-
+    <div>
         <div className='bg-mycolors-periwinkle min-h-screen flex flex-col md:px-20'>
             <div className='pt-10 lg:mt-20'>
                 <PageTitle />
@@ -16,6 +17,10 @@ export default function Contact() {
                 </div>
             </div>
         </div>
- 
+        <Footer 
+            bgColor='mycolors-periwinkle'
+            txtColor='black'
+        />
+    </div>
     )
 }

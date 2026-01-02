@@ -140,7 +140,10 @@ export default function Projects() {
                     />
                     <Carousel logoUrls={logoUrls}/>
                 </div>
-                <Footer />
+                <Footer 
+                    bgColor='white'
+                    txtColor='black'
+                />
             </div>
         </div>
     )

@@ -1,9 +1,15 @@
 import Link from "next/link"
 
+interface FooterProps {
+    bgColor: string
+    txtColor: string
+}
 
-const Footer = () => {
+
+
+const Footer:React.FC<FooterProps> = ({bgColor, txtColor}) => {
     return (
-        <footer className="bg-white text-black py-6">
+        <footer className={`bg-${bgColor} text-${txtColor} py-6`}>
             <div className="container mx-auto text-center">
                 <p className="text-sm">
                     © {new Date().getFullYear()} Adrian G. Vera. All rights reserved.
