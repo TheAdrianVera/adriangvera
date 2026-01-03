@@ -2,6 +2,7 @@
 
 import React from "react"
 import Particlez from "./components/Particlez"
+import RotatingRole from "./components/RotatingRole"
 
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
         </h1>
         <div className="my-16 text-center animate-fade-in">
           <h2 className="text-lg md:text-xl text-zinc-500 ">
-            Chicago Based Software Engineer & Web Developer
+            Chicago Based <RotatingRole />
           </h2>
         </div>
 
