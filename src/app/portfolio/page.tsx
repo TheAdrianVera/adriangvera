@@ -87,7 +87,7 @@ export default function Projects() {
             skills: ['Javascript', 'PHP', 'HTML/CSS', 'JQuery', 'GoDaddy Hosting', 'Google Analytics'],
             design: ['Adobe Suite'],
             location: ['Champaign', 'IL'],
-            url: ['https://www.subsistencemarketplaces.com', 'Play the Game']
+            url: ['http://www.subsistencemarketplaces.com', 'Play the Game']
         },
         {
             title: 'F.H. Paschen Construction Wordpress Development',
