@@ -77,7 +77,7 @@ export default function Projects() {
             skills: ['Wordpress CMS', 'Hubspot', 'GTM', 'Google Analytics'],
             design: ['Canva'],
             location: ['Winnetka', 'IL'],
-            url: ['https://www.erikaslighthouse.org', 'Learn More']
+            url: ['https://www.erikaslighthouse.org', 'Visit Site']
         },
         {
             title: 'Subsistence Marketplaces Website',
@@ -119,7 +119,8 @@ export default function Projects() {
             skills: ['React', 'Type Script', 'NextJS', 'Vercel', 'AWS S3', 'AWS Glue', 'Amazon DynamoDB', 'AWS Cognito'],
             design: ['Figma'],
             special: ['Redesign', 'Data Enablement'],
-            location: ['Elgin', 'IL']
+            location: ['Elgin', 'IL'],
+            url: ['https://weareiw.com', 'Visit Site']
         },
         {
             title: 'Linestar Website Redesign',
@@ -139,7 +140,7 @@ export default function Projects() {
             description: 'Developed React components for ad refreshing and lazy loading, migrated code to TypeScript, and improved auction tracking. Implemented AWS (S3, CloudFront) to reduce caching costs and led daily release management.',
             skills: ['React','Type Script','NextJS', 'Vercel', 'AWS S3', 'AWS Cloudwatch', 'Github CI/CD', 'SQL'],
             location: ['New York', 'NY'],
-            url: ['https://www.aditude.com', 'Learn More']
+            url: ['https://www.aditude.com', 'Visit Site']
         }
     ]
 
