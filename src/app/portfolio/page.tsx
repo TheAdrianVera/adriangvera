@@ -73,7 +73,7 @@ export default function Projects() {
             year: 2025,
             logo: 'elh',
             description: 'Marketing Coorindator and Wordpress website manager at Erika\'s Lighthouse.',
-            skills: ['Wordpress', 'Hubspot', 'GTM', 'Google Analytics'],
+            skills: ['Wordpress CMS', 'Hubspot', 'GTM', 'Google Analytics'],
             design: ['Canva'],
             location: ['Winnetka', 'IL']
         },
