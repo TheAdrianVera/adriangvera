@@ -10,6 +10,7 @@ interface Project {
     skills: string[]
     design?: string[]
     special?: string[]
+    url?: string[]
 }
 
 interface ProjectModalProps {
@@ -113,6 +114,33 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                         </div>
                     )}
                 </div>
+                
+                {/* Footer with URL Button */}
+                {project.url && project.url.length > 0 && (
+                    <div className="border-t border-gray-200 p-6 bg-gray-50">
+                        <a
+                            href={project.url[0]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center w-full px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-mycolors-orange transition-colors duration-200 shadow-sm hover:shadow-md transform hover:scale-[1.02] active:scale-[0.98]"
+                        >
+                            <span>{project.url[1]}</span>
+                            <svg 
+                                className="ml-2 w-5 h-5" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                viewBox="0 0 24 24"
+                            >
+                                <path 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" 
+                                    strokeWidth={2} 
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                )}
             </div>
         </div>
     )
