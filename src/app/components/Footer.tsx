@@ -16,10 +16,10 @@ const Footer:React.FC<FooterProps> = ({bgColor, txtColor, lnkColor}) => {
                     © {new Date().getFullYear()} Adrian G. Vera. All rights reserved.
                 </p>
                 <div className="mt-4 flex justify-center space-x-4">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={`text-gray-600 hover:text-${lnkColor}`}>
+                    <a href="https://github.com/TheAdrianVera" target="_blank" rel="noopener noreferrer" className={`text-gray-600 hover:text-${lnkColor}`}>
                         GitHub
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={`text-gray-600 hover:text-${lnkColor}`}>
+                    <a href="https://www.linkedin.com/in/adrian-vera-6180a7b6/" target="_blank" rel="noopener noreferrer" className={`text-gray-600 hover:text-${lnkColor}`}>
                         LinkedIn
                     </a>
                     <Link href="/contact" className={`text-gray-600 hover:text-${lnkColor}`}>
