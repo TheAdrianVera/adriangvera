@@ -87,7 +87,7 @@ export default function Projects() {
             location: ['Champaign', 'IL']
         },
         {
-            title: 'F.H. Paschen Construction Website Updates & Maintenance',
+            title: 'F.H. Paschen Construction Wordpress Development',
             year: 2020,
             logo: 'fhp',
             description: 'Migrated their WordPress site to GoDaddy, cutting hosting costs. Built custom plugins and a project database to enhance website interactivity. Designed and developed a new site section, translating Figma designs into responsive WordPress code with PHP, JavaScript, HTML, and CSS.',
@@ -97,7 +97,7 @@ export default function Projects() {
             location: ['Chicago', 'IL']
         },
         {
-            title: 'Stalworth Underground Website Updates',
+            title: 'Stalworth Underground Wordpress Developmnet',
             year: 2021,
             logo: 'stalworth',
             description: 'Migrated their WordPress site from GoDaddy to Pressable. Developed a custom plugin with a UI to query their project database, generate reports, and improve data accessibility.',
@@ -127,7 +127,7 @@ export default function Projects() {
             location: ['San Diego', 'CA']
         },
         {
-            title: 'Aditude Cloud Wrapper Contributor',
+            title: 'Aditude Cloud Wrapper Contributions',
             year: 2023,
             logo: 'aditude',
             description: 'Developed React components for ad refreshing and lazy loading, migrated code to TypeScript, and improved auction tracking. Implemented AWS (S3, CloudFront) to reduce caching costs and led daily release management.',
