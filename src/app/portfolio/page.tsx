@@ -59,15 +59,6 @@ export default function Projects() {
 
     const myProjects = [
         {
-            title: 'Subsistence Marketplaces Website',
-            year: 2016,
-            logo: 'uiuc',
-            description: 'In collaboration with the University of Illinois Urbana Champaign Business Deparment I helped create an interactive web application that allowed students to simulate living in a subsistence marketplace. Played over 100,000 times worldwide and apart of student learning curriculum.\n 2025 Redesign coming soon!',
-            skills: ['Javascript', 'PHP', 'HTML/CSS', 'JQuery', 'GoDaddy Hosting', 'Google Analytics'],
-            design: ['Adobe Suite'],
-            location: ['Champaign', 'IL']
-        },
-        {
             title: 'Advanced Healthcare Services Website',
             year: 2025,
             logo: 'ahsllc',
@@ -78,17 +69,35 @@ export default function Projects() {
             location: ['Springfield', 'IL']
         },
         {
-            title: 'F.H. Paschen Construction Website',
+            title: 'Erika\'s Lighthouse Website Management & Marketing',
+            year: 2025,
+            logo: 'elh',
+            description: 'Marketing Coorindator and Wordpress website manager at Erika\'s Lighthouse.',
+            skills: ['Wordpress', 'Hubspot', 'GTM', 'Google Analytics'],
+            design: ['Canva'],
+            location: ['Winnetka', 'IL']
+        },
+        {
+            title: 'Subsistence Marketplaces Website',
+            year: 2016,
+            logo: 'uiuc',
+            description: 'In collaboration with the University of Illinois Urbana Champaign Business Deparment I helped create an interactive web application that allowed students to simulate living in a subsistence marketplace. Played over 100,000 times worldwide and apart of student learning curriculum.\n 2025 Redesign coming soon!',
+            skills: ['Javascript', 'PHP', 'HTML/CSS', 'JQuery', 'GoDaddy Hosting', 'Google Analytics'],
+            design: ['Adobe Suite'],
+            location: ['Champaign', 'IL']
+        },
+        {
+            title: 'F.H. Paschen Construction Website Updates & Maintenance',
             year: 2020,
             logo: 'fhp',
             description: 'Migrated their WordPress site to GoDaddy, cutting hosting costs. Built custom plugins and a project database to enhance website interactivity. Designed and developed a new site section, translating Figma designs into responsive WordPress code with PHP, JavaScript, HTML, and CSS.',
-            skills: ['Javascript', 'AWS S3', 'PHP','HTML/CSS', 'Wordpress Development', 'mySQL', 'GoDaddy Hosting', 'GoDaddy Migration'],
+            skills: ['Javascript', 'AWS S3', 'PHP','HTML/CSS', 'Wordpress Development', 'mySQL', 'Google Analytics', 'GoDaddy Hosting', 'GoDaddy Migration'],
             special: ['Rehost'],
             design: ['Adobe Suite','Figma'],
             location: ['Chicago', 'IL']
         },
         {
-            title: 'Stalworth Underground Website',
+            title: 'Stalworth Underground Website Updates',
             year: 2021,
             logo: 'stalworth',
             description: 'Migrated their WordPress site from GoDaddy to Pressable. Developed a custom plugin with a UI to query their project database, generate reports, and improve data accessibility.',
@@ -98,7 +107,7 @@ export default function Projects() {
             location: ['Chicago', 'IL']
         },
         {
-            title: 'IW Technologies Inventory Portal',
+            title: 'IW Technologies Inventory Portal Redesign',
             year: 2024,
             logo: 'iw',
             description: 'Built a Next.js and TypeScript dashboard on Vercel with OAuth authentication and AWS Cognito for user permissions. Replaced slow NetSuite queries with an AWS-powered analytics pipeline, significantly improving performance.',
@@ -108,17 +117,17 @@ export default function Projects() {
             location: ['Elgin', 'IL']
         },
         {
-            title: 'Linestar Website',
+            title: 'Linestar Website Redesign',
             year: 2022,
             logo: 'linestar',
             description: 'Led the front-end redesign of LineStar, a sports betting analytics platform with 1M+ users. Translated Figma designs into responsive AngularJS UI, refactored .NET code, and delivered the full redesign in five months.',
-            skills: ['Javascript', 'Angular', 'ASP.NET MVC', 'C#/.NET','HTML/CSS'],
+            skills: ['Javascript', 'Angular', 'DNN Development', 'ASP.NET MVC', 'C#/.NET','HTML/CSS'],
             special: ['Redesign'],
             design: ['Figma'],
             location: ['San Diego', 'CA']
         },
         {
-            title: 'Aditude Cloud Wrapper',
+            title: 'Aditude Cloud Wrapper Contributor',
             year: 2023,
             logo: 'aditude',
             description: 'Developed React components for ad refreshing and lazy loading, migrated code to TypeScript, and improved auction tracking. Implemented AWS (S3, CloudFront) to reduce caching costs and led daily release management.',
