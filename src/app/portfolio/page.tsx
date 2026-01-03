@@ -66,7 +66,8 @@ export default function Projects() {
             skills: ['React', 'Type Script', 'Vercel', 'AWS S3', 'HTML/CSS', 'Google Analytics', 'Meta Pixel Tracking', 'GoDaddy Migration'],
             special: ['Rehost', 'Redesign'],
             design: ['Figma'],
-            location: ['Springfield', 'IL']
+            location: ['Springfield', 'IL'],
+            url: ['https://www.ahsllc.org', 'Visit Site']
         },
         {
             title: 'Erika\'s Lighthouse Website Management & Marketing',
@@ -75,7 +76,8 @@ export default function Projects() {
             description: 'Marketing Coorindator and Wordpress website manager at Erika\'s Lighthouse.',
             skills: ['Wordpress CMS', 'Hubspot', 'GTM', 'Google Analytics'],
             design: ['Canva'],
-            location: ['Winnetka', 'IL']
+            location: ['Winnetka', 'IL'],
+            url: ['https://www.erikaslighthouse.org', 'Learn More']
         },
         {
             title: 'Subsistence Marketplaces Website',
@@ -84,7 +86,8 @@ export default function Projects() {
             description: 'In collaboration with the University of Illinois Urbana Champaign Business Deparment I helped create an interactive web application that allowed students to simulate living in a subsistence marketplace. Played over 100,000 times worldwide and apart of student learning curriculum.\n 2025 Redesign coming soon!',
             skills: ['Javascript', 'PHP', 'HTML/CSS', 'JQuery', 'GoDaddy Hosting', 'Google Analytics'],
             design: ['Adobe Suite'],
-            location: ['Champaign', 'IL']
+            location: ['Champaign', 'IL'],
+            url: ['https://www.subsistencemarketplaces.com', 'Play the Game']
         },
         {
             title: 'F.H. Paschen Construction Wordpress Development',
@@ -94,7 +97,8 @@ export default function Projects() {
             skills: ['Javascript', 'AWS S3', 'PHP','HTML/CSS', 'Wordpress Development', 'mySQL', 'Google Analytics', 'GoDaddy Hosting', 'GoDaddy Migration'],
             special: ['Rehost'],
             design: ['Adobe Suite','Figma'],
-            location: ['Chicago', 'IL']
+            location: ['Chicago', 'IL'],
+            url: ['https://fhpaschen.com', 'Visit Site']
         },
         {
             title: 'Stalworth Underground Wordpress Developmnet',
@@ -104,7 +108,8 @@ export default function Projects() {
             skills: ['Javascript', 'PHP', 'HTML/CSS', 'mySQL', 'Wordpress Development', 'ETL','Database Management', 'Pressable', 'GoDaddy Migration'],
             design: ['Adobe Suite'],
             special: ['Rehost'],
-            location: ['Chicago', 'IL']
+            location: ['Chicago', 'IL'],
+            url: ['https://stalworthunderground.com', 'Visit Site']
         },
         {
             title: 'IW Technologies Inventory Portal Redesign',
@@ -124,7 +129,8 @@ export default function Projects() {
             skills: ['Javascript', 'Angular', 'DNN Development', 'ASP.NET MVC', 'C#/.NET','HTML/CSS'],
             special: ['Redesign'],
             design: ['Figma'],
-            location: ['San Diego', 'CA']
+            location: ['San Diego', 'CA'],
+            url: ['https://linestarapp.com', 'Visit Site']
         },
         {
             title: 'Aditude Cloud Wrapper Contributions',
@@ -132,7 +138,8 @@ export default function Projects() {
             logo: 'aditude',
             description: 'Developed React components for ad refreshing and lazy loading, migrated code to TypeScript, and improved auction tracking. Implemented AWS (S3, CloudFront) to reduce caching costs and led daily release management.',
             skills: ['React','Type Script','NextJS', 'Vercel', 'AWS S3', 'AWS Cloudwatch', 'Github CI/CD', 'SQL'],
-            location: ['New York', 'NY']
+            location: ['New York', 'NY'],
+            url: ['https://www.aditude.com', 'Learn More']
         }
     ]
 

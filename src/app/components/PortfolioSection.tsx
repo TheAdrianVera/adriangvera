@@ -12,6 +12,7 @@ interface Project {
     skills: string[]
     design?: string[]
     special?: string[]
+    url?: string[]
 }
 
 interface PortfioSectionProps {
