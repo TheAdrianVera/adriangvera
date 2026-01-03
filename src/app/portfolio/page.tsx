@@ -73,7 +73,7 @@ export default function Projects() {
             title: 'Erika\'s Lighthouse Website Management & Marketing',
             year: 2025,
             logo: 'elh',
-            description: 'Marketing Coorindator and Wordpress website manager at Erika\'s Lighthouse.',
+            description: 'Marketing Coordinator at Erika\’s Lighthouse, a nonprofit dedicated to educating and empowering young people around depression and suicide awareness. I support our Wordpress site, marketing campaigns, digital content across our channels, and outreach efforts that help schools and communities create inclusive, stigma-free environments for students.',
             skills: ['Wordpress CMS', 'Hubspot', 'GTM', 'Google Analytics'],
             design: ['Canva'],
             location: ['Winnetka', 'IL'],
