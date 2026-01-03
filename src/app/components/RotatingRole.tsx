@@ -6,7 +6,8 @@ import { AnimatePresence, motion } from "motion/react"
 const roles = [
   "Software Engineer",
   "Front-End Engineer",
-  "Web Developer"
+  "Web Developer",
+  "Web Engineer"
 ]
 
 export default function RotatingRole() {

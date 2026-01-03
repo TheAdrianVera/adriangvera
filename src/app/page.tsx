@@ -18,8 +18,8 @@ export default function Home() {
           Adrian Vera
         </h1>
         <div className="my-16 text-center animate-fade-in">
-          <h2 className="text-lg md:text-xl text-zinc-500 ">
-            Chicago Based <RotatingRole />
+          <h2 className="w-[20rem] flex flex-col text-lg md:text-xl text-zinc-500 ">
+            <span className="px-2">Chicago Based</span> <RotatingRole />
           </h2>
         </div>
 
