@@ -58,15 +58,15 @@ export default function Projects() {
     ]
 
     const myProjects = [
-        {
-            title: 'Drupal Website Demo',
-            year: 2026,
-            logo: 'chi',
-            description: 'Quick Drupal Website Demo running on Docker, and deployed via AWS EC2 instances.',
-            skills: ['Drupal', 'PHP', 'HTML', 'CSS', 'MariaDB', 'AWS EC2'],
-            location: ['Chicago', 'IL'],
-            url: ['http://ec2-13-59-122-40.us-east-2.compute.amazonaws.com/', 'Try Demo']
-        },
+        // {
+        //     title: 'Drupal Website Demo',
+        //     year: 2026,
+        //     logo: 'chi',
+        //     description: 'Quick Drupal Website Demo running on Docker, and deployed via AWS EC2 instances.',
+        //     skills: ['Drupal', 'PHP', 'HTML', 'CSS', 'MariaDB', 'AWS EC2'],
+        //     location: ['Chicago', 'IL'],
+        //     url: ['http://ec2-13-59-122-40.us-east-2.compute.amazonaws.com/', 'Try Demo']
+        // },
         {
             title: 'Advanced Healthcare Services Website',
             year: 2025,
