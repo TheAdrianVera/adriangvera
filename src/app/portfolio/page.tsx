@@ -78,16 +78,16 @@ export default function Projects() {
             location: ['Springfield', 'IL'],
             url: ['https://www.ahsllc.org', 'Visit Site']
         },
-        {
-            title: 'Erika\'s Lighthouse Website Management & Marketing',
-            year: 2025,
-            logo: 'elh',
-            description: 'Marketing Coordinator at Erika\’s Lighthouse, a nonprofit dedicated to educating and empowering young people around depression and suicide awareness. I support our Wordpress site, marketing campaigns, digital content across our channels, and outreach efforts that help schools and communities create inclusive, stigma-free environments for students.',
-            skills: ['Wordpress CMS', 'Hubspot', 'GTM', 'Google Analytics'],
-            design: ['Canva'],
-            location: ['Winnetka', 'IL'],
-            url: ['https://www.erikaslighthouse.org', 'Visit Site']
-        },
+        // {
+        //     title: 'Erika\'s Lighthouse Website Management & Marketing',
+        //     year: 2025,
+        //     logo: 'elh',
+        //     description: 'Marketing Coordinator at Erika\’s Lighthouse, a nonprofit dedicated to educating and empowering young people around depression and suicide awareness. I support our Wordpress site, marketing campaigns, digital content across our channels, and outreach efforts that help schools and communities create inclusive, stigma-free environments for students.',
+        //     skills: ['Wordpress CMS', 'Hubspot', 'GTM', 'Google Analytics'],
+        //     design: ['Canva'],
+        //     location: ['Winnetka', 'IL'],
+        //     url: ['https://www.erikaslighthouse.org', 'Visit Site']
+        // },
         {
             title: 'Subsistence Marketplaces Website',
             year: 2016,
