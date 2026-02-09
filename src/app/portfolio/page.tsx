@@ -58,15 +58,15 @@ export default function Projects() {
     ]
 
     const myProjects = [
-        {
-            title: 'Drupal Website Demo',
-            year: 2026,
-            logo: 'chi',
-            description: 'Quick Drupal Website Demo running on Docker, and deployed via AWS EC2 instances.',
-            skills: ['Drupal', 'PHP', 'HTML', 'CSS', 'MariaDB', 'AWS EC2'],
-            location: ['Chicago', 'IL'],
-            url: ['http://ec2-13-59-122-40.us-east-2.compute.amazonaws.com/', 'Try Demo']
-        },
+        // {
+        //     title: 'Drupal Website Demo',
+        //     year: 2026,
+        //     logo: 'chi',
+        //     description: 'Quick Drupal Website Demo running on Docker, and deployed via AWS EC2 instances.',
+        //     skills: ['Drupal', 'PHP', 'HTML', 'CSS', 'MariaDB', 'AWS EC2'],
+        //     location: ['Chicago', 'IL'],
+        //     url: ['http://ec2-13-59-122-40.us-east-2.compute.amazonaws.com/', 'Try Demo']
+        // },
         {
             title: 'Advanced Healthcare Services Website',
             year: 2025,
@@ -78,16 +78,16 @@ export default function Projects() {
             location: ['Springfield', 'IL'],
             url: ['https://www.ahsllc.org', 'Visit Site']
         },
-        {
-            title: 'Erika\'s Lighthouse Website Management & Marketing',
-            year: 2025,
-            logo: 'elh',
-            description: 'Marketing Coordinator at Erika\’s Lighthouse, a nonprofit dedicated to educating and empowering young people around depression and suicide awareness. I support our Wordpress site, marketing campaigns, digital content across our channels, and outreach efforts that help schools and communities create inclusive, stigma-free environments for students.',
-            skills: ['Wordpress CMS', 'Hubspot', 'GTM', 'Google Analytics'],
-            design: ['Canva'],
-            location: ['Winnetka', 'IL'],
-            url: ['https://www.erikaslighthouse.org', 'Visit Site']
-        },
+        // {
+        //     title: 'Erika\'s Lighthouse Website Management & Marketing',
+        //     year: 2025,
+        //     logo: 'elh',
+        //     description: 'Marketing Coordinator at Erika\’s Lighthouse, a nonprofit dedicated to educating and empowering young people around depression and suicide awareness. I support our Wordpress site, marketing campaigns, digital content across our channels, and outreach efforts that help schools and communities create inclusive, stigma-free environments for students.',
+        //     skills: ['Wordpress CMS', 'Hubspot', 'GTM', 'Google Analytics'],
+        //     design: ['Canva'],
+        //     location: ['Winnetka', 'IL'],
+        //     url: ['https://www.erikaslighthouse.org', 'Visit Site']
+        // },
         {
             title: 'Subsistence Marketplaces Website',
             year: 2016,
