@@ -142,15 +142,15 @@ export default function Projects() {
             location: ['San Diego', 'CA'],
             url: ['https://linestarapp.com', 'Visit Site']
         },
-        // {
-        //     title: 'Aditude Cloud Wrapper Contributions',
-        //     year: 2023,
-        //     logo: 'aditude',
-        //     description: 'Developed React components for ad refreshing and lazy loading, migrated code to TypeScript, and improved auction tracking. Implemented AWS (S3, CloudFront) to reduce caching costs and led daily release management.',
-        //     skills: ['React','Type Script','NextJS', 'Vercel', 'AWS S3', 'AWS Cloudwatch', 'Github CI/CD', 'SQL'],
-        //     location: ['New York', 'NY'],
-        //     url: ['https://www.aditude.com', 'Visit Site']
-        // }
+        {
+            title: 'Aditude Cloud Wrapper Contributions',
+            year: 2023,
+            logo: 'aditude',
+            description: 'Developed React components for ad refreshing and lazy loading, migrated code to TypeScript, and improved auction tracking. Implemented AWS (S3, CloudFront) to reduce caching costs and led daily release management.',
+            skills: ['React','Type Script','NextJS', 'Vercel', 'AWS S3', 'AWS Cloudwatch', 'Github CI/CD', 'SQL'],
+            location: ['New York', 'NY'],
+            url: ['https://www.aditude.com', 'Visit Site']
+        }
     ]
 
     return (
