@@ -16,7 +16,7 @@ export interface Project {
 export interface ProjectDescription {
     overview: string,
     summary: string,
-    challenge: string,
+    challenge: string[],
     role: string[],
     evolution: ProjectPhase[],
     architectureDiagram: string,
@@ -26,6 +26,7 @@ export interface ProjectDescription {
 }
 
 export interface ProjectPhase {
+    phaseNumber: number,
     phaseTitle: string,
     phaseYear: number,
     phaseDescription: string[],
@@ -38,7 +39,97 @@ export const projects: Project[] = [
         title: 'Advanced Healthcare Services Website',
         year: [2020, 2026],
         logo: 'ahsllc',
-        metaDescription: 'Migrated their site from GoDaddy to Vercel, reducing costs. Rebuilt the site with TypeScript, React, and Tailwind, and implemented analytics tracking for better visitor insights. ',
+        metaDescription: 
+            'Migrated their site from GoDaddy to Vercel, reducing costs. ' +
+            'Rebuilt the site with TypeScript, React, and Tailwind, ' +
+            'and implemented analytics tracking for better visitor insights.'
+        ,
+        description: {
+            overview: 
+                'Advanced Healthcare LLC is a home healthcare provider in the Springfield, ' +
+                'IL area. Since 2020, I have partnered with the organization as the primary technical ' +
+                'owner of their website, helping evolve their web presence from a basic externally managed ' + 
+                'site into a modern React-based platform focused on performance, maintainability, ' +
+                'and marketing visibility.'
+            ,
+            summary: 
+                'Since 2020, I’ve served as the technical owner of Advanced Healthcare’s ' + 
+                'web platform, guiding its evolution from a legacy website to a modern ' + 
+                'React-based marketing infrastructure.'
+            ,
+            challenge: [
+                    'Advanced Healthcare needed greater control over their website, hosting, ' +
+                    'and marketing infrastructure. Their existing setup limited ' +
+                    'flexibility and made updates difficult.'
+                ,
+                    'My goal was to help transition the organization toward a modern, '+
+                    'maintainable platform that supported both business growth and marketing visibility.'
+            ],
+            role: [
+                'Technical owner and long-term web partner',
+                'Frontend development and architecture decisions',
+                'Hosting and deployment strategy',
+                'Analytics and marketing integration',
+                'Ongoing maintenance and optimization'
+            ],
+            evolution: [
+                {
+                    phaseNumber: 1,
+                    phaseTitle: 'Foundation',
+                    phaseYear: 2020,
+                    phaseDescription: [
+                        'Migrated website hosting to GoDaddy to give the organization direct ownership and control.',
+                        'Built and maintained the initial website using HTML, CSS, JavaScript, and PHP.',
+                        'Provided ongoing passive maintenance and support.'
+                    ]
+                },
+                {
+                    phaseNumber: 2,
+                    phaseTitle: 'Modernization',
+                    phaseYear: 2024,
+                    phaseDescription: [
+                        'Led full redesign and rebuild of the website using React, TypeScript, and Tailwind CSS.',
+                        'Migrated hosting to Vercel for improved deployment workflows and performance.',
+                        'Implemented AWS S3 for image storage and asset management.',
+                        'Integrated analytics tools including GA4, GTM, and Meta Pixel for improved marketing insights.',
+                        'Added EmailJS and security measures to improve form submission reliability and safety.'
+                    ]
+                },
+                {
+                    phaseNumber: 3,
+                    phaseTitle: 'Ongoing Ownership',
+                    phaseYear: 2026,
+                    phaseDescription: [
+                        'Continue maintaining hosting and deployments.',
+                        'Handle updates and feature improvements as needed.',
+                        'Support marketing and analytics initiatives through ongoing technical improvements.'
+                    ]
+                }
+            ],
+            architectureDiagram: '',
+            outcomes: [
+                '4+ year partnership (since 2020)',
+                '2 major website iterations',
+                'Transitioned organization to full website ownership',
+                'Modernized stack to React-based architecture',
+                'Added analytics tracking for improved marketing visibility',
+                'Established long-term maintenance relationship'
+            ],
+            approach: [
+                    'A key goal throughout this project was reducing operational dependency and '+
+                    'improving long-term maintainability.'
+                ,
+                    'By migrating hosting, modernizing the frontend stack, and implementing structured ' +
+                    'analytics workflows, the organization gained greater control over their website ' +
+                    'infrastructure and the ability to iterate more confidently.'
+            ],
+            currentResponsibilities: [
+                'Maintain hosting, deployments, and site reliability',
+                'Implement updates and improvements as business needs evolve',
+                'Manage analytics and tracking integrations (GA4, GTM, Meta Pixel)',
+                'Ensure secure and reliable form submission workflows'
+            ]
+        },
         skills: ['React', 'Type Script', 'Vercel', 'AWS S3', 'HTML/CSS', 'Google Analytics', 'Meta Pixel Tracking', 'GoDaddy Migration'],
         special: ['Rehost', 'Redesign'],
         design: ['Figma'],
