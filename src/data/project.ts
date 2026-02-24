@@ -15,6 +15,7 @@ export interface Project {
 
 export interface ProjectDescription {
     overview: string,
+    fullTitle: string
     summary: string,
     challenge: string[],
     role: string[],
@@ -52,6 +53,7 @@ export const projects: Project[] = [
                 'site into a modern React-based platform focused on performance, maintainability, ' +
                 'and marketing visibility.'
             ,
+            fullTitle: 'Advanced Healthcare Services Website Modernization & Technical Ownership',
             summary: 
                 'Since 2020, I’ve served as the technical owner of Advanced Healthcare’s ' + 
                 'web platform, guiding its evolution from a legacy website to a modern ' + 
