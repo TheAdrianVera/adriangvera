@@ -4,12 +4,31 @@ export interface Project {
     year: number[]
     logo: string
     metaDescription: string
+    description?: ProjectDescription,
     location: string[]
     skills: string[]
     design?: string[]
     special?: string[]
     url?: string[]
     logoSlug: string
+}
+
+export interface ProjectDescription {
+    overview: string,
+    summary: string,
+    challenge: string,
+    role: string[],
+    evolution: ProjectPhase[],
+    architectureDiagram: string,
+    outcomes: string[],
+    approach: string[],
+    currentResponsibilities: string[]
+}
+
+export interface ProjectPhase {
+    phaseTitle: string,
+    phaseYear: number,
+    phaseDescription: string[],
 }
 
 
