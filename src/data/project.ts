@@ -106,7 +106,7 @@ export const projects: Project[] = [
                     ]
                 }
             ],
-            architectureDiagram: '',
+            architectureDiagram: '/portfolio/advanced/ahsllcdiagram.png',
             outcomes: [
                 '4+ year partnership (since 2020)',
                 '2 major website iterations',
