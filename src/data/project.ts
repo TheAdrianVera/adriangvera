@@ -9,6 +9,7 @@ export interface Project {
     design?: string[]
     special?: string[]
     url?: string[]
+    logoSlug: string
 }
 
 export const projects: Project[] = [
@@ -22,7 +23,8 @@ export const projects: Project[] = [
         special: ['Rehost', 'Redesign'],
         design: ['Figma'],
         location: ['Springfield', 'IL'],
-        url: ['https://www.ahsllc.org', 'Visit Site']
+        url: ['https://www.ahsllc.org', 'Visit Site'],
+        logoSlug: 'ahsllc',
     },
     {
         slug: 'subsistence-marketplaces-website',
@@ -33,7 +35,8 @@ export const projects: Project[] = [
         skills: ['Javascript', 'PHP', 'HTML/CSS', 'JQuery', 'GoDaddy Hosting', 'Google Analytics'],
         design: ['Adobe Suite'],
         location: ['Champaign', 'IL'],
-        url: ['http://www.subsistencemarketplaces.com', 'Play the Game']
+        url: ['http://www.subsistencemarketplaces.com', 'Play the Game'],
+        logoSlug: 'uiuc',
     },
     {
         slug: 'fh-paschen-construction-wordpress',
@@ -45,7 +48,8 @@ export const projects: Project[] = [
         special: ['Rehost'],
         design: ['Adobe Suite','Figma'],
         location: ['Chicago', 'IL'],
-        url: ['https://fhpaschen.com', 'Visit Site']
+        url: ['https://fhpaschen.com', 'Visit Site'],
+        logoSlug: 'fhp',
     },
     {
         slug: 'stalworth-underground-wordpress',
@@ -57,7 +61,8 @@ export const projects: Project[] = [
         design: ['Adobe Suite'],
         special: ['Rehost'],
         location: ['Chicago', 'IL'],
-        url: ['https://stalworthunderground.com', 'Visit Site']
+        url: ['https://stalworthunderground.com', 'Visit Site'],
+        logoSlug: 'stalworth',
     },
     {
         slug: 'linestar-website-redesign',
@@ -69,7 +74,8 @@ export const projects: Project[] = [
         special: ['Redesign'],
         design: ['Figma'],
         location: ['San Diego', 'CA'],
-        url: ['https://linestarapp.com', 'Visit Site']
+        url: ['https://linestarapp.com', 'Visit Site'],
+        logoSlug: 'linestar',
     },
     {
         slug: 'aditude-cloud-wrapper-contributions',
@@ -79,9 +85,23 @@ export const projects: Project[] = [
         description: 'Developed React components for ad refreshing and lazy loading, migrated code to TypeScript, and improved auction tracking. Implemented AWS (S3, CloudFront) to reduce caching costs and led daily release management.',
         skills: ['React','Type Script','NextJS', 'Vercel', 'AWS S3', 'AWS Cloudwatch', 'Github CI/CD', 'SQL'],
         location: ['New York', 'NY'],
-        url: ['https://www.aditude.com', 'Visit Site']
+        url: ['https://www.aditude.com', 'Visit Site'],
+        logoSlug: 'aditude',
     }
 ]
+
+/** End year (or only year) for sorting — most recent first. */
+export function getProjectYearSortKey(project: Project): number {
+    const y = project.year
+    return y.length > 0 ? y[y.length - 1]! : 0
+}
+
+/** Format year for display: "2021" or "2020 – 2023". */
+export function formatProjectYear(year: number[]): string {
+    if (year.length === 0) return ''
+    if (year.length === 1) return String(year[0])
+    return `${year[0]} – ${year[year.length - 1]}`
+}
 
 /** All projects (for portfolio listing). */
 export function getAllProjects(): Project[] {
