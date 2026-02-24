@@ -1,5 +1,7 @@
 'use client'
 
+import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import type { Project, ProjectDescription } from '@/data/project'
 
 interface ProjectCaseStudyProps {
@@ -8,6 +10,54 @@ interface ProjectCaseStudyProps {
 }
 
 export function ProjectCaseStudy({ project, desc }: ProjectCaseStudyProps) {
+    const [diagramOpen, setDiagramOpen] = useState(false)
+
+    useEffect(() => {
+        if (!diagramOpen) return
+        const handleEsc = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') setDiagramOpen(false)
+        }
+        document.addEventListener('keydown', handleEsc)
+        document.body.style.overflow = 'hidden'
+        return () => {
+            document.removeEventListener('keydown', handleEsc)
+            document.body.style.overflow = ''
+        }
+    }, [diagramOpen])
+
+    const lightbox = diagramOpen && desc.architectureDiagram && typeof document !== 'undefined' && createPortal(
+        <div
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/85"
+                onClick={() => setDiagramOpen(false)}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Enlarged architecture diagram"
+        >
+            {/* Content wrapper: clicks on image/button don't close; only backdrop closes */}
+            <div
+                className="relative inline-block max-w-[95vw] max-h-[90vh]"
+                onClick={(e) => e.stopPropagation()}
+            >
+                <img
+                    src={desc.architectureDiagram}
+                    alt="Architecture diagram"
+                    className="max-w-full max-h-[90vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
+                />
+                <button
+                    type="button"
+                    onClick={() => setDiagramOpen(false)}
+                    className="absolute -top-2 -right-2 z-10 p-2 rounded-full bg-white text-gray-800 shadow-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black/85"
+                    aria-label="Close"
+                >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>,
+        document.body
+    )
+
     return (
         <div className="text-black space-y-12">
             {/* Top: Overview + Diagram side by side — diagram higher on page */}
@@ -19,11 +69,19 @@ export function ProjectCaseStudy({ project, desc }: ProjectCaseStudyProps) {
                 {desc.architectureDiagram && (
                     <div className="lg:sticky lg:top-24 order-first lg:order-none">
                         <h2 className="text-xl font-semibold text-gray-900 mb-3">Architecture</h2>
-                        <img
-                            src={desc.architectureDiagram}
-                            alt="Architecture diagram"
-                            className="rounded-xl border border-gray-200 shadow-sm w-full max-w-lg"
-                        />
+                        <button
+                            type="button"
+                            onClick={() => setDiagramOpen(true)}
+                            className="block w-full text-left rounded-xl border border-gray-200 shadow-sm overflow-hidden hover:ring-2 hover:ring-mycolors-orange hover:ring-offset-2 transition-shadow focus:outline-none focus:ring-2 focus:ring-mycolors-orange focus:ring-offset-2"
+                        >
+                            <img
+                                src={desc.architectureDiagram}
+                                alt="Architecture diagram (click to enlarge)"
+                                className="w-full max-w-lg cursor-zoom-in"
+                            />
+                        </button>
+                        <p className="text-xs text-gray-500 mt-1">Click to enlarge</p>
+                        {lightbox}
                     </div>
                 )}
             </section>
