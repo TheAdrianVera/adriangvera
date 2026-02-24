@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { getProjectBySlug, getAllProjectSlugs, formatProjectYear } from '@/data/project'
 import { notFound } from 'next/navigation'
 import Footer from '@components/Footer'
