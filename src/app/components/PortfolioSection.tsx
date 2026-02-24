@@ -2,25 +2,17 @@
 
 import { useState } from 'react'
 import ProjectModal from './ProjectModal'
-
-interface Project {
-    title: string
-    year: number
-    logo: string
-    description: string
-    location: string[]
-    skills: string[]
-    design?: string[]
-    special?: string[]
-    url?: string[]
-}
+import type { Project } from '@/data/project'
+import { getProjectYearSortKey, formatProjectYear } from '@/data/project'
 
 interface PortfioSectionProps {
     projects: Project[]
 }
 
 const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
-    const sortedProjects = projects.sort((a, b) => b.year - a.year)
+    const sortedProjects = [...projects].sort(
+        (a, b) => getProjectYearSortKey(b) - getProjectYearSortKey(a)
+    )
     const [selectedProject, setSelectedProject] = useState<Project | null>(null)
     const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -50,10 +42,10 @@ const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
                         />
                         <div className='flex-1'>
                             <div className='text-xl md:text-2xl font-bold mb-1'>{project.title}</div>
-                            <div className='text-md md:text-lg text-gray-600'>{project.location[0]}, {project.location[1]} - {project.year}</div>
+                            <div className='text-md md:text-lg text-gray-600'>{project.location[0]}, {project.location[1]} – {formatProjectYear(project.year)}</div>
                         </div>
                     </div>
-                    <div className='text-base md:text-lg text-gray-600'>{project.description}</div>
+                    <div className='text-base md:text-lg text-gray-600'>{project.description?.summary ?? project.metaDescription}</div>
                     <div className='mt-4 flex flex-wrap'>
 
                         {/* Special Skills - Business Impact */}

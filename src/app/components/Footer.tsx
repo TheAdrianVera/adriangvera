@@ -6,8 +6,6 @@ interface FooterProps {
     lnkColor: string
 }
 
-
-
 const Footer:React.FC<FooterProps> = ({bgColor, txtColor, lnkColor}) => {
     return (
         <footer className={`bg-${bgColor} text-${txtColor} py-6`}>

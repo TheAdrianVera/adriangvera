@@ -1,13 +1,11 @@
 import Marquee from "react-fast-marquee"
 import Image from "next/image"
 import Link from "next/link"
-
 interface Logo {
     name: string
     url: string
     website: string
 }
-
 interface CarouselProps {
     logoUrls: Logo[]
 }
