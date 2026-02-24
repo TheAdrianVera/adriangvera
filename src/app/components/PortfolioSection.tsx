@@ -45,7 +45,7 @@ const PortfolioSection:React.FC<PortfioSectionProps> = ({projects}) => {
                             <div className='text-md md:text-lg text-gray-600'>{project.location[0]}, {project.location[1]} – {formatProjectYear(project.year)}</div>
                         </div>
                     </div>
-                    <div className='text-base md:text-lg text-gray-600'>{project.description}</div>
+                    <div className='text-base md:text-lg text-gray-600'>{project.metaDescription}</div>
                     <div className='mt-4 flex flex-wrap'>
 
                         {/* Special Skills - Business Impact */}

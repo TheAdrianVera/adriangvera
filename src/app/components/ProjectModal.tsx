@@ -61,7 +61,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                 <div className="p-6">
                     <div className="mb-6">
                         <h3 className="text-lg font-semibold text-gray-700 mb-2">Project Overview</h3>
-                        <p className="text-gray-600 leading-relaxed">{project.description}</p>
+                        <p className="text-gray-600 leading-relaxed">{project.metaDescription}</p>
                     </div>
                     
                     {/* Skills */}
