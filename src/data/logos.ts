@@ -49,12 +49,6 @@ export const logos: Logo[] = [
         website: 'https://www.weareiw.com/',
     },
     {
-        slug: 'linestar',
-        name: 'Linestar',
-        url: '/logos/client_logos/linestarlogo.png',
-        website: 'https://linestarapp.com/'
-    },
-    {
         slug: 'pwc',
         name: 'PricewaterhouseCoopers (PwC)',
         url: '/logos/client_logos/pwclogo.svg',
