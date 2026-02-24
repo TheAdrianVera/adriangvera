@@ -40,10 +40,10 @@ export const projects: Project[] = [
         title: 'Advanced Healthcare Services Website',
         year: [2020, 2026],
         logo: 'ahsllc',
-        metaDescription: 
-            'Migrated their site from GoDaddy to Vercel, reducing costs. ' +
-            'Rebuilt the site with TypeScript, React, and Tailwind, ' +
-            'and implemented analytics tracking for better visitor insights.'
+        metaDescription:
+            'Since 2020, I’ve served as the technical owner of Advanced Healthcare’s ' + 
+            'web platform, guiding its evolution from a legacy website to a modern ' + 
+            'React-based marketing infrastructure.'
         ,
         description: {
             overview: 
