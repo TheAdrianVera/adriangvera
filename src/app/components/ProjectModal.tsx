@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from 'react'
+import Link from 'next/link'
 import type { Project } from '@/data/project'
 
 interface ProjectModalProps {
@@ -106,8 +107,17 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                 </div>
                 
                 {/* Footer with URL Button */}
-                {project.url && project.url.length > 0 && (
-                    <div className="border-t border-gray-200 p-6 bg-gray-50">
+                <div className="border-t border-gray-200 p-6 bg-gray-50 space-y-3">
+                    {project.description && (
+                        <Link
+                            href={`/portfolio/${project.slug}`}
+                            onClick={onClose}
+                            className="inline-flex items-center justify-center w-full px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-mycolors-orange transition-colors duration-200 shadow-sm hover:shadow-md transform hover:scale-[1.02] active:scale-[0.98]"
+                        >
+                            View full case study
+                        </Link>
+                    )}
+                    {project.url && project.url.length > 0 && (
                         <a
                             href={project.url[0]}
                             target="_blank"
@@ -129,8 +139,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                 />
                             </svg>
                         </a>
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
         </div>
     )

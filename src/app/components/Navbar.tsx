@@ -12,19 +12,15 @@ const Navbar = () => {
     let logoUrl = 'adriangvera-com-white.png'
     let hoverColor = 'text-mycolors-orange'
 
-    switch (path) {
-        case '/portfolio':
-            textColor = 'text-black'
-            logoUrl = 'adriangvera-com.png'
-            break
-        case '/contact':
-            textColor = 'text-black'
-            logoUrl = 'adriangvera-com.png'
-            hoverColor = 'text-white'
-            break
-        default:
-            textColor = 'text-white'
-            break
+    if (path === '/contact') {
+        textColor = 'text-black'
+        logoUrl = 'adriangvera-com.png'
+        hoverColor = 'text-white'
+    } else if (path === '/portfolio' || path.startsWith('/portfolio/')) {
+        textColor = 'text-black'
+        logoUrl = 'adriangvera-com.png'
+    } else {
+        textColor = 'text-white'
     }
 
     return (
