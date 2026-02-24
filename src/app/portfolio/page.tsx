@@ -7,7 +7,6 @@ import { getAllLogos } from "@/data/logos"
 
 export default function Projects() {
     const logoUrls = getAllLogos()
-
     const myProjects = getAllProjects()
 
     return (

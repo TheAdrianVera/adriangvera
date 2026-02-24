@@ -7,7 +7,9 @@ const roles = [
   "Software Engineer",
   "Front-End Engineer",
   "Web Developer",
-  "Web Engineer"
+  "Web Engineer",
+  "Website Strategist",
+  "Full Stack Web Developer"
 ]
 
 export default function RotatingRole() {
