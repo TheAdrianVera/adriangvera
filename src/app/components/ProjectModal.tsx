@@ -1,17 +1,7 @@
 "use client"
 
 import { useEffect } from 'react'
-
-interface Project {
-    title: string
-    year: number
-    logo: string
-    description: string
-    skills: string[]
-    design?: string[]
-    special?: string[]
-    url?: string[]
-}
+import type { Project } from '@/data/project'
 
 interface ProjectModalProps {
     project: Project | null

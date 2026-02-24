@@ -2,18 +2,7 @@
 
 import { useState } from 'react'
 import ProjectModal from './ProjectModal'
-
-interface Project {
-    title: string
-    year: number
-    logo: string
-    description: string
-    location: string[]
-    skills: string[]
-    design?: string[]
-    special?: string[]
-    url?: string[]
-}
+import type { Project } from '@/data/project'
 
 interface PortfioSectionProps {
     projects: Project[]
