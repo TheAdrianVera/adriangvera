@@ -154,9 +154,134 @@ export const projects: Project[] = [
     {
         slug: 'fh-paschen-construction-wordpress',
         title: 'F.H. Paschen Construction Wordpress Development',
-        year: [2020, 2023],
+        year: [2020, 2026],
         logo: 'fhp',
-        metaDescription: 'Migrated their WordPress site to GoDaddy, cutting hosting costs. Built custom plugins and a project database to enhance website interactivity. Designed and developed a new site section, translating Figma designs into responsive WordPress code with PHP, JavaScript, HTML, and CSS.',
+        metaDescription: 
+            'F.H. Paschen Construction is a Chicago-based construction company with a long-standing'  +
+            'WordPress website that required ongoing development, maintenance, and modernization support. ' +
+            'Since 2020, I have served as their primary web development partner, helping the organization gain ' +
+            'ownership of its hosting infrastructure, extend platform capabilities through major new functionality ' +
+            '(including sector landing pages and a custom project database system), and maintain stability through ' +
+            'ongoing troubleshooting of issues such as DNS and redirects. In 2026, my role expanded to supporting ' +
+            'the company’s full website redesign by helping define requirements, technical specifications, and ' +
+            'implementation direction to ensure the next version of the platform is scalable and maintainable long term.'
+        ,
+        description: {
+            overview: 
+                'F.H. Paschen Construction is a Chicago-based construction company with a long-standing ' + 
+                'WordPress website that required ongoing development, maintenance, and modernization support. Since 2020, ' +
+                'I have served as their primary web development partner, helping the organization gain ownership of its hosting ' +
+                'infrastructure, extend platform capabilities through major new functionality (including sector landing pages and ' +
+                'a custom project database system), and maintain stability through ongoing troubleshooting of issues such as DNS ' +
+                'and redirects. In 2026, my role expanded to supporting the company’s full website redesign by helping define ' +
+                'requirements, technical specifications, and implementation direction to ensure the next version of the platform ' +
+                'is scalable and maintainable long term.'
+            ,
+            fullTitle: 
+                'F.H. Paschen Construction — Long-Term WordPress Platform Ownership & Modernization Support'
+            ,
+            summary: 
+                'Since 2020, I have served as F.H. Paschen’s primary web development partner, helping the organization ' +
+                'gain control of their website infrastructure, extend and stabilize their WordPress platform, and guide long-term ' +
+                'modernization efforts including a major redesign initiative in 2026.'
+            ,
+            challenge: [
+                'F.H. Paschen needed a reliable technical partner to maintain and extend their long-standing WordPress website while helping the organization gain greater control over hosting and infrastructure. Their existing setup required frequent updates, troubleshooting, and incremental improvements to support evolving business needs.',
+                'My goal was to stabilize and expand the platform through practical, maintainable solutions while laying the groundwork for long-term modernization. This included improving content structure, adding new functionality, and supporting the organization’s transition toward a more scalable future website.'
+            ],
+            role: [
+                'WordPress development and platform extensions',
+                'Data migration and admin tooling',
+                'Hosting and DNS troubleshooting',
+                'Feature development and content expansion',
+                'Technical guidance for redesign planning'
+            ],
+            evolution: [
+                {
+                    phaseNumber: 1,
+                    phaseTitle: 'Infrastructure Ownership & Partnership Start',
+                    phaseYear: 2020,
+                    phaseDescription: [
+                        'Helped F.H. Paschen gain control over website hosting and infrastructure',
+                        'Supported migration to GoDaddy hosting',
+                        'Became primary web developer for ongoing website support'
+                    ]
+                },
+                {
+                    phaseNumber: 2,
+                    phaseTitle: 'Ongoing Maintenance & Platform Stability',
+                    phaseYear: 2021,
+                    phaseDescription: [
+                        'Managed website updates, fixes, and feature requests',
+                        'Maintained WordPress stability while supporting evolving business needs',
+                        'Implemented incremental improvements to keep the platform operational'
+                    ]
+                },
+                {
+                    phaseNumber: 3,
+                    phaseTitle: 'Sector Expansion & Content Growth',
+                    phaseYear: 2022,
+                    phaseDescription: [
+                        'Added new sector landing pages',
+                        'Expanded site structure to better support marketing and service visibility',
+                        'Improved content organization across the website',
+                    ]
+                },
+                {
+                    phaseNumber: 4,
+                    phaseTitle: 'Projects Platform & Data System',
+                    phaseYear: 2023,
+                    phaseDescription: [
+                        'Built a new Projects section that did not previously exist',
+                        'Cleaned and structured project data provided in Excel format',
+                        'Imported data into WordPress using SQL and CSV workflows',
+                        'Created custom WordPress admin interface for internal project management',
+                        'Developed searchable and sortable project pages for users'
+                    ]
+                },
+                {
+                    phaseNumber: 5,
+                    phaseTitle: 'DNS Troubleshooting & Infrastructure Support',
+                    phaseYear: 2024,
+                    phaseDescription: [
+                        'Diagnosed recurring DNS and redirect issues affecting internal office access',
+                        'Guided DNS managers toward solutions when routing behavior changed',
+                        'Resolved issues caused by hosting updates overriding links or redirects'
+                    ]
+                },
+                {
+                    phaseNumber: 6,
+                    phaseTitle: 'Redesign Planning & Technical Oversight',
+                    phaseYear: 2026,
+                    phaseDescription: [
+                        'Supporting full website redesign initiative',
+                        'Helping define requirements and technical specifications',
+                        'Providing technical oversight during design and development',
+                        'Ensuring scalability and long-term maintainability considerations'
+                    ]
+                }
+            ],
+            architectureDiagram: '/portfolio/fhp/fhpdiagram.png',
+            outcomes: [
+                '5+ years of ongoing technical partnership',
+                'Added multiple sector landing pages supporting business growth',
+                'Designed and implemented custom project database system',
+                'Enabled internal teams to manage project content independently',
+                'Improved user experience through searchable project pages',
+                'Resolved recurring DNS/redirect issues impacting internal access',
+                'Contributed technical leadership to 2026 redesign initiative'
+            ],
+            approach: [
+                'A key goal throughout this project was reducing operational dependency and improving long-term maintainability within a legacy WordPress environment. Rather than replacing the system outright, I focused on incremental improvements that extended the platform’s capabilities while keeping workflows stable for internal teams.',
+                'By introducing structured data workflows, building internal admin tooling, and proactively addressing infrastructure issues like DNS and routing behavior, the organization gained greater control over its website and the ability to manage content and updates more confidently over time.'
+            ],
+            currentResponsibilities: [
+                'Maintain and troubleshoot legacy WordPress platform',
+                'Support feature updates and content expansion',
+                'Provide technical guidance for redesign execution',
+                'Ensure reliability across hosting and DNS environments'
+            ],
+        },
         skills: ['Javascript', 'AWS S3', 'PHP','HTML/CSS', 'Wordpress Development', 'mySQL', 'Google Analytics', 'GoDaddy Hosting', 'GoDaddy Migration'],
         special: ['Rehost'],
         design: ['Adobe Suite','Figma'],
